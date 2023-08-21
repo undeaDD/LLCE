@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Router } from '@angular/router';
 import lpi1 from "../../assets/json/lpi1.json";
 
 @Component({
@@ -10,7 +9,7 @@ import lpi1 from "../../assets/json/lpi1.json";
 export class LearnComponent {
   public items = lpi1;
 
-  constructor(private titleService: Title, private router: Router) {
+  constructor(private titleService: Title) {
     this.titleService.setTitle("LLCE - Lernmodus");
   }
 
