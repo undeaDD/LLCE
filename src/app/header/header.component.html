@@ -1,3 +1,19 @@
-<header>
-    <img src="assets/img/logo.png">
-</header>
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/home">
+            <img src="/assets/img/logo.png" width="30" height="30" class="d-inline-block align-top mr-1">
+            inux Learn Check Exam
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggle">
+        <form class="d-flex ms-auto my-2 my-lg-0">
+            <button *ngIf="showLoginButton" class="btn btn-success ms-auto my-3 my-md-0" routerLink="/login" type="button">Anmelden</button>
+            <button *ngIf="showLogoutButton" class="btn btn-danger ms-auto my-3 my-md-0" (click)="onLogout()" type="button">Abmelden</button>
+        </form>
+        </div>
+    </div>
+</nav>

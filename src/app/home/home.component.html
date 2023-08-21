@@ -1,1 +1,105 @@
-<app-card2></app-card2>
+<nav>
+    <ol class="breadcrumb my-3">
+        <li class="breadcrumb-item active">Home</li>
+    </ol>
+</nav>
+<div class="row gx-3 my-4">
+    <div class="col">
+        <label class="h4" for="questionPoolSelect">Fragenpool auswählen</label>
+        <select class="form-select" id="questionPoolSelect">
+            <option>Linux Professional Institute - 1</option>
+            <option>Linux Professional Institute - 2</option>
+        </select>
+    </div>
+</div>
+
+<div class="row gx-3 mb-4">
+    <h4>Abfragemodus auswählen</h4>
+
+    <div class="col mb-4 text-center">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Lern</h4>
+            </div>
+            <div class="card-body">
+                <ul class="mb-4 text-start">
+                    <li>Fragen Einzeln und als Liste</li>
+                    <li>Kein Zeitlimit</li>
+                    <li>Keine Benotung</li>
+                    <li>Keine Statistiken</li>
+                    <li>Mit Merkfunktion</li>
+                </ul>
+                <button type="button" routerLink="/learn" class="btn btn-lg w-100 btn-success">Starten</button>
+            </div>
+            <div class="card-footer">
+                <div class="progress-stacked">
+                    <div class="progress" role="progressbar"
+                        style="width: 0;">
+                        <div class="progress-bar bg-warning"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col mb-4 text-center">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Check</h4>
+            </div>
+            <div class="card-body">
+                <ul class="mb-4 text-start">
+                    <li>Fragen nur einzeln</li>
+                    <li>Kein Zeitlimit</li>
+                    <li>Mit Benotung</li>
+                    <li>Mit Statistiken</li>
+                    <li>Möglichkeit zum Überspringen</li>
+                </ul>
+                <button type="button" class="btn btn-lg w-100 btn-primary">Starten</button>
+            </div>
+            <div class="card-footer">
+                <div class="progress-stacked">
+                    <div class="progress" role="progressbar"
+                        style="width: 0;">
+                        <div class="progress-bar bg-success"></div>
+                    </div>
+                    <div class="progress" role="progressbar"
+                        style="width: 0;">
+                        <div class="progress-bar bg-danger"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col mb-4 text-center">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Exam</h4>
+            </div>
+            <div class="card-body">
+                <ul class="mb-4 text-start">
+                    <li>Fragen nur einzeln</li>
+                    <li>Mit 20min Zeitlimit</li>
+                    <li>Mit Benotung</li>
+                    <li>Mit Statistiken</li>
+                    <li>Ohne Überspringen</li>
+                </ul>
+                <button type="button" class="btn btn-lg w-100 btn-danger">Starten</button>
+            </div>
+            <div class="card-footer">
+                <div class="progress-stacked">
+                    <div class="progress" role="progressbar"
+                        style="width: 0;">
+                        <div class="progress-bar bg-success"></div>
+                    </div>
+                    <div class="progress" role="progressbar"
+                        style="width: 0;">
+                        <div class="progress-bar bg-danger"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

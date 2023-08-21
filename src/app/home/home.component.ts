@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'llce-home',
+  templateUrl: './home.component.html'
 })
 export class HomeComponent {
-
+  
+  constructor(private titleService: Title, private router: Router) {
+    this.titleService.setTitle("LLCE - Home");
+  }
 }
