@@ -9,15 +9,15 @@
 <form class="col-12 col-lg-4 offset-lg-4 mt-5">
   <h4>Registrieren</h4>
   <div class="form-floating mt-4 mb-3">
-    <input type="email" class="form-control" ngModel #emailField id="emailField" placeholder="max.mustermann@mail.de">
+    <input type="email" class="form-control" ngModel name="emailField" #emailField id="emailField" placeholder="max.mustermann@mail.de">
     <label for="emailField">E-Mail</label>
   </div>
   <div class="form-floating mb-3">
-    <input type="password" class="form-control" ngModel #passwordFieldFirst id="passwordFieldFirst">
+    <input type="password" class="form-control" ngModel name="passwordFieldFirst" #passwordFieldFirst id="passwordFieldFirst">
     <label for="passwordFieldFirst">Passwort</label>
   </div>
   <div class="form-floating mb-4">
-    <input type="password" class="form-control" ngModel #passwordFieldSecond id="passwordFieldSecond">
+    <input type="password" class="form-control" ngModel  name="passwordFieldSecond" #passwordFieldSecond id="passwordFieldSecond">
     <label for="passwordField">Passwort wiederholen</label>
   </div>
   <div class="form-group d-flex">
