@@ -465,24 +465,17 @@ export class HeaderComponent {
 
   public onLogout() {
     let result &#x3D; confirm(&quot;Willst du dich wirklich abmelden?&quot;);
-
-    if (result) {
-      this.userService.user &#x3D; {
-        isGuest: false,
-        isLoggedIn: false
-      };
-      this.router.navigate([&quot;home&quot;]);
-    }
+    if (result) { window.location.reload(); }
   }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;nav class&#x3D;&quot;navbar navbar-dark bg-primary navbar-expand-lg&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;nav class&#x3D;&quot;navbar fixed-top navbar-dark bg-primary navbar-expand-lg&quot;&gt;
     &lt;div class&#x3D;&quot;container&quot;&gt;
         &lt;a class&#x3D;&quot;navbar-brand&quot; routerLink&#x3D;&quot;/home&quot;&gt;
-            &lt;img src&#x3D;&quot;/assets/img/logo.png&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; class&#x3D;&quot;d-inline-block align-top mr-1&quot;&gt;
+            &lt;img src&#x3D;&quot;./assets/img/logo.png&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; class&#x3D;&quot;d-inline-block align-top mr-1&quot;&gt;
             inux Learn Check Exam
         &lt;/a&gt;
         
@@ -526,8 +519,8 @@ export class HeaderComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav class="navbar navbar-dark bg-primary navbar-expand-lg">    <div class="container">        <a class="navbar-brand" routerLink="/home">            <img src="/assets/img/logo.png" width="30" height="30" class="d-inline-block align-top mr-1">            inux Learn Check Exam        </a>                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle">            <span class="navbar-toggler-icon"></span>        </button>        <div class="collapse navbar-collapse" id="navbarToggle">        <form class="d-flex ms-auto my-2 my-lg-0">            <button *ngIf="showLoginButton" class="btn btn-success ms-auto my-3 my-md-0" routerLink="/login" type="button">Anmelden</button>            <button *ngIf="showLogoutButton" class="btn btn-danger ms-auto my-3 my-md-0" (click)="onLogout()" type="button">Abmelden</button>        </form>        </div>    </div></nav></div>'
-    var COMPONENTS = [{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'}];
+        var COMPONENT_TEMPLATE = '<div><nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg">    <div class="container">        <a class="navbar-brand" routerLink="/home">            <img src="./assets/img/logo.png" width="30" height="30" class="d-inline-block align-top mr-1">            inux Learn Check Exam        </a>                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle">            <span class="navbar-toggler-icon"></span>        </button>        <div class="collapse navbar-collapse" id="navbarToggle">        <form class="d-flex ms-auto my-2 my-lg-0">            <button *ngIf="showLoginButton" class="btn btn-success ms-auto my-3 my-md-0" routerLink="/login" type="button">Anmelden</button>            <button *ngIf="showLogoutButton" class="btn btn-danger ms-auto my-3 my-md-0" (click)="onLogout()" type="button">Abmelden</button>        </form>        </div>    </div></nav></div>'
+    var COMPONENTS = [{'name': 'CheckComponent', 'selector': 'llce-check'},{'name': 'ExamComponent', 'selector': 'llce-exam'},{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HeaderComponent'};
 </script>

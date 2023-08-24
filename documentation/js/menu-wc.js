@@ -59,13 +59,19 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/RootModule.html" data-type="entity-link" >RootModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-bs-toggle="collapse" ${ isNormalMode ?
-                                            'data-bs-target="#components-links-module-RootModule-19cd3a74b22e6084e53c672d85a464fa22596a091669cbeac9ea187c528b4b1b779641c89515174d2c252478f5fa7d59d5e1325e635175d6947bc2596341c557"' : 'data-bs-target="#xs-components-links-module-RootModule-19cd3a74b22e6084e53c672d85a464fa22596a091669cbeac9ea187c528b4b1b779641c89515174d2c252478f5fa7d59d5e1325e635175d6947bc2596341c557"' }>
+                                            'data-bs-target="#components-links-module-RootModule-965e012f05b32d444a8f154bf90575b137e2a4de9fad14010d86f825bc61e86483e1fd7cc281e3439fb95640f5a599c9021aa7538faae39029af3807340fea7b"' : 'data-bs-target="#xs-components-links-module-RootModule-965e012f05b32d444a8f154bf90575b137e2a4de9fad14010d86f825bc61e86483e1fd7cc281e3439fb95640f5a599c9021aa7538faae39029af3807340fea7b"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-RootModule-19cd3a74b22e6084e53c672d85a464fa22596a091669cbeac9ea187c528b4b1b779641c89515174d2c252478f5fa7d59d5e1325e635175d6947bc2596341c557"' :
-                                            'id="xs-components-links-module-RootModule-19cd3a74b22e6084e53c672d85a464fa22596a091669cbeac9ea187c528b4b1b779641c89515174d2c252478f5fa7d59d5e1325e635175d6947bc2596341c557"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-RootModule-965e012f05b32d444a8f154bf90575b137e2a4de9fad14010d86f825bc61e86483e1fd7cc281e3439fb95640f5a599c9021aa7538faae39029af3807340fea7b"' :
+                                            'id="xs-components-links-module-RootModule-965e012f05b32d444a8f154bf90575b137e2a4de9fad14010d86f825bc61e86483e1fd7cc281e3439fb95640f5a599c9021aa7538faae39029af3807340fea7b"' }>
+                                            <li class="link">
+                                                <a href="components/CheckComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >CheckComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/ExamComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >ExamComponent</a>
+                                            </li>
                                             <li class="link">
                                                 <a href="components/FooterComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >FooterComponent</a>
                                             </li>
@@ -97,13 +103,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                     </li>
                                 <li class="chapter inner">
                                     <div class="simple menu-toggler" data-bs-toggle="collapse" ${ isNormalMode ?
-                                        'data-bs-target="#injectables-links-module-RootModule-19cd3a74b22e6084e53c672d85a464fa22596a091669cbeac9ea187c528b4b1b779641c89515174d2c252478f5fa7d59d5e1325e635175d6947bc2596341c557"' : 'data-bs-target="#xs-injectables-links-module-RootModule-19cd3a74b22e6084e53c672d85a464fa22596a091669cbeac9ea187c528b4b1b779641c89515174d2c252478f5fa7d59d5e1325e635175d6947bc2596341c557"' }>
+                                        'data-bs-target="#injectables-links-module-RootModule-965e012f05b32d444a8f154bf90575b137e2a4de9fad14010d86f825bc61e86483e1fd7cc281e3439fb95640f5a599c9021aa7538faae39029af3807340fea7b"' : 'data-bs-target="#xs-injectables-links-module-RootModule-965e012f05b32d444a8f154bf90575b137e2a4de9fad14010d86f825bc61e86483e1fd7cc281e3439fb95640f5a599c9021aa7538faae39029af3807340fea7b"' }>
                                         <span class="icon ion-md-arrow-round-down"></span>
                                         <span>Injectables</span>
                                         <span class="icon ion-ios-arrow-down"></span>
                                     </div>
-                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-RootModule-19cd3a74b22e6084e53c672d85a464fa22596a091669cbeac9ea187c528b4b1b779641c89515174d2c252478f5fa7d59d5e1325e635175d6947bc2596341c557"' :
-                                        'id="xs-injectables-links-module-RootModule-19cd3a74b22e6084e53c672d85a464fa22596a091669cbeac9ea187c528b4b1b779641c89515174d2c252478f5fa7d59d5e1325e635175d6947bc2596341c557"' }>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-RootModule-965e012f05b32d444a8f154bf90575b137e2a4de9fad14010d86f825bc61e86483e1fd7cc281e3439fb95640f5a599c9021aa7538faae39029af3807340fea7b"' :
+                                        'id="xs-injectables-links-module-RootModule-965e012f05b32d444a8f154bf90575b137e2a4de9fad14010d86f825bc61e86483e1fd7cc281e3439fb95640f5a599c9021aa7538faae39029af3807340fea7b"' }>
                                         <li class="link">
                                             <a href="injectables/ApiService.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >ApiService</a>
                                         </li>

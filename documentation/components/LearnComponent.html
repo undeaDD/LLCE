@@ -131,6 +131,10 @@
                                     <span class="modifier">Public</span>
                                 <a href="#items" >items</a>
                             </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#poolId" >poolId</a>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -145,7 +149,19 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#onSelect" >onSelect</a>
+                                <a href="#getAnswer" >getAnswer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getBgColor" >getBgColor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getMerkenButton" >getMerkenButton</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onToggle" >onToggle</a>
                             </li>
                         </ul>
                     </td>
@@ -165,12 +181,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(titleService: Title)</code>
+<code>constructor(loc: Location, titleService: Title, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/learn/learn.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/learn/learn.component.ts:20</a></div>
                             </td>
                         </tr>
 
@@ -188,10 +204,34 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
+                                                        <td>loc</td>
+                                                  
+                                                        <td>
+                                                                    <code>Location</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
                                                         <td>titleService</td>
                                                   
                                                         <td>
                                                                     <code>Title</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -221,26 +261,26 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="onSelect"></a>
+                    <a name="getAnswer"></a>
                     <span class="name">
                         <span class="modifier">Public</span>
-                        <span ><b>onSelect</b></span>
-                        <a href="#onSelect"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>getAnswer</b></span>
+                        <a href="#getAnswer"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>onSelect(id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    <code>getAnswer(qanswers: literal type[])</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/app/learn/learn.component.ts:16</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/learn/learn.component.ts:42</a></div>
                 </td>
             </tr>
 
@@ -260,6 +300,231 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr>
+                                    <td>qanswers</td>
+                                    <td>
+                                            <code>literal type[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBgColor"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getBgColor</b></span>
+                        <a href="#getBgColor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBgColor(id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/learn/learn.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMerkenButton"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getMerkenButton</b></span>
+                        <a href="#getMerkenButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMerkenButton(id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="32"
+                            class="link-to-prism">src/app/learn/learn.component.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onToggle"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onToggle</b></span>
+                        <a href="#onToggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onToggle(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/learn/learn.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
                                 <tr>
                                     <td>id</td>
                                     <td>
@@ -308,12 +573,50 @@
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>lpi1</code>
+                        <i>Type : </i>    <code>literal type[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/learn/learn.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/learn/learn.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="poolId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>poolId</b></span>
+                        <a href="#poolId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>2</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/learn/learn.component.ts:11</a></div>
                         </td>
                     </tr>
 
@@ -328,61 +631,91 @@
     <div class="tab-pane fade  tab-source-code" id="source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
 import { Title } from &#x27;@angular/platform-browser&#x27;;
-import lpi1 from &quot;../../assets/json/lpi1.json&quot;;
+import { UserService } from &#x27;../services/user/user.service&#x27;;
+import { Location } from &#x27;@angular/common&#x27;;
 
 @Component({
   selector: &#x27;llce-learn&#x27;,
   templateUrl: &#x27;./learn.component.html&#x27;
 })
 export class LearnComponent {
-  public items &#x3D; lpi1;
+  public poolId: number &#x3D; 2;
 
-  constructor(private titleService: Title) {
+  public items: {
+    qid: string,
+    qtxt: string[],
+    qanswers: {
+      txt: string[],
+      correct: boolean
+    }[]
+  }[] &#x3D; [];
+  
+  constructor(private loc: Location, private titleService: Title, private userService: UserService) {
     this.titleService.setTitle(&quot;LLCE - Lernmodus&quot;);
+    this.poolId &#x3D; (this.loc.getState() as {poolId: any}).poolId;
+    this.items &#x3D; (this.loc.getState() as {pool: any}).pool;
   }
 
-  public onSelect(id: any) {
-    console.log(id)
+  public getBgColor(id: any): string {
+    return this.userService.isMarked(this.poolId, id) ? &quot;var(--bs-primary)&quot; : &quot;var(--bs-accordion-btn-bg)&quot;;
   }
 
+  public getMerkenButton(id: any): string {
+    return this.userService.isMarked(this.poolId, id) ? &quot;Nicht Markieren&quot; : &quot;Markieren&quot;;
+  }
+
+  public onToggle(event: any, id: any) {
+    event.stopPropagation()
+
+    this.userService.toggleMarked(this.poolId, id);
+  }
+
+  public getAnswer(qanswers: { txt: string[]; correct?: boolean; }[]): string {
+    return qanswers.filter(i &#x3D;&gt; i?.correct ?? true).map(i &#x3D;&gt; i.txt).join()
+  }
 }</code></pre>
     </div>
 
     <div class="tab-pane fade " id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;nav&gt;
     &lt;ol class&#x3D;&quot;breadcrumb my-3&quot;&gt;
-        &lt;li class&#x3D;&quot;breadcrumb-item&quot;&gt;&lt;a href&#x3D;&quot;/home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;breadcrumb-item&quot;&gt;&lt;a routerLink&#x3D;&quot;/home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
         &lt;li class&#x3D;&quot;breadcrumb-item active&quot;&gt;Lernmodus&lt;/li&gt;
     &lt;/ol&gt;
 &lt;/nav&gt;
 
-&lt;div class&#x3D;&quot;card my-5&quot;&gt;
+&lt;div class&#x3D;&quot;card mt-5&quot;&gt;
 
     &lt;h4 class&#x3D;&quot;card-header py-3&quot;&gt;
       Alle Fragen
     &lt;/h4&gt;
 
     &lt;div class&#x3D;&quot;card-body&quot;&gt;
-        &lt;div class&#x3D;&quot;list-group&quot;&gt;
-            &lt;div *ngFor&#x3D;&quot;let item of items&quot; class&#x3D;&quot;list-group-item list-group-item-action d-flex justify-content-between&quot; (click)&#x3D;&quot;onSelect(item.qid)&quot;&gt;
-                &lt;p class&#x3D;&quot;fw-medium text-light my-auto&quot;&gt;{{item.qid}}. {{item.qtxt}}&lt;/p&gt;
-                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary ms-auto&quot;&gt;Merken&lt;/button&gt;
+        &lt;div class&#x3D;&quot;accordion&quot; id&#x3D;&quot;accordionList&quot;&gt;
+            &lt;div *ngFor&#x3D;&quot;let item of items&quot; class&#x3D;&quot;accordion-item&quot;&gt;
+                &lt;div clas&#x3D;&quot;accordion-header&quot;&gt;
+                    &lt;button [style.background-color]&#x3D;&quot;getBgColor(item.qid)&quot; class&#x3D;&quot;accordion-button collapsed&quot; type&#x3D;&quot;button&quot; data-bs-toggle&#x3D;&quot;collapse&quot; [attr.data-bs-target]&#x3D;&quot;&#x27;#collapse-&#x27; + item.qid&quot;&gt;
+                        &lt;p class&#x3D;&quot;fw-medium text-light my-auto mx-3&quot;&gt;{{item.qid}}.&lt;/p&gt;
+                        &lt;p class&#x3D;&quot;fw-medium text-light my-2&quot;&gt;{{item.qtxt}}&lt;/p&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div [id]&#x3D;&quot;&#x27;collapse-&#x27; + item.qid&quot; class&#x3D;&quot;accordion-collapse collapse&quot; data-bs-parent&#x3D;&quot;#accordionList&quot;&gt;
+                    &lt;div class&#x3D;&quot;accordion-body d-flex&quot;&gt;
+                      &lt;p class&#x3D;&quot;ms-5 me-3 my-auto text-secondary&quot;&gt;{{getAnswer(item.qanswers)}}&lt;/p&gt;
+                      &lt;button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;onToggle($event, item.qid)&quot; class&#x3D;&quot;btn btn-primary my-auto ms-auto&quot;&gt;{{getMerkenButton(item.qid)}}&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
             
             &lt;!-- 
                 *ngIf&#x3D;&quot;item.isValid&quot;
-                &lt;div class&#x3D;&quot;list-group-item list-group-item-action list-group-item-warning d-flex justify-content-between&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;fw-medium text-dark my-auto text-decoration-none&quot;&gt;Frage 2&lt;/a&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-danger ms-auto&quot;&gt;Nicht mehr Merken&lt;/a&gt;
-                &lt;/div&gt;
             --&gt; 
         &lt;/div&gt;
     &lt;/div&gt;
 
-    &lt;div class&#x3D;&quot;card-footer py-4&quot;&gt;
+    &lt;div class&#x3D;&quot;card-footer pt-4&quot;&gt;
       &lt;button type&#x3D;&quot;button&quot; routerLink&#x3D;&quot;/home&quot; class&#x3D;&quot;btn w-25 btn-primary&quot;&gt;Zurück&lt;/button&gt;
     &lt;/div&gt;
-
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -412,8 +745,8 @@ export class LearnComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav>    <ol class="breadcrumb my-3">        <li class="breadcrumb-item"><a href="/home">Home</a></li>        <li class="breadcrumb-item active">Lernmodus</li>    </ol></nav><div class="card my-5">    <h4 class="card-header py-3">      Alle Fragen    </h4>    <div class="card-body">        <div class="list-group">            <div *ngFor="let item of items" class="list-group-item list-group-item-action d-flex justify-content-between" (click)="onSelect(item.qid)">                <p class="fw-medium text-light my-auto">{{item.qid}}. {{item.qtxt}}</p>                <button type="button" class="btn btn-primary ms-auto">Merken</button>            </div>                        <!--                 *ngIf="item.isValid"                <div class="list-group-item list-group-item-action list-group-item-warning d-flex justify-content-between">                    <a href="#" class="fw-medium text-dark my-auto text-decoration-none">Frage 2</a>                    <a href="#" class="btn btn-danger ms-auto">Nicht mehr Merken</a>                </div>            -->         </div>    </div>    <div class="card-footer py-4">      <button type="button" routerLink="/home" class="btn w-25 btn-primary">Zurück</button>    </div></div></div>'
-    var COMPONENTS = [{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'}];
+        var COMPONENT_TEMPLATE = '<div><nav>    <ol class="breadcrumb my-3">        <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>        <li class="breadcrumb-item active">Lernmodus</li>    </ol></nav><div class="card mt-5">    <h4 class="card-header py-3">      Alle Fragen    </h4>    <div class="card-body">        <div class="accordion" id="accordionList">            <div *ngFor="let item of items" class="accordion-item">                <div clas="accordion-header">                    <button [style.background-color]="getBgColor(item.qid)" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="\'#collapse-\' + item.qid">                        <p class="fw-medium text-light my-auto mx-3">{{item.qid}}.</p>                        <p class="fw-medium text-light my-2">{{item.qtxt}}</p>                    </button>                </div>                <div [id]="\'collapse-\' + item.qid" class="accordion-collapse collapse" data-bs-parent="#accordionList">                    <div class="accordion-body d-flex">                      <p class="ms-5 me-3 my-auto text-secondary">{{getAnswer(item.qanswers)}}</p>                      <button type="button" (click)="onToggle($event, item.qid)" class="btn btn-primary my-auto ms-auto">{{getMerkenButton(item.qid)}}</button>                    </div>                </div>            </div>                        <!--                 *ngIf="item.isValid"            -->         </div>    </div>    <div class="card-footer pt-4">      <button type="button" routerLink="/home" class="btn w-25 btn-primary">Zurück</button>    </div></div></div>'
+    var COMPONENTS = [{'name': 'CheckComponent', 'selector': 'llce-check'},{'name': 'ExamComponent', 'selector': 'llce-exam'},{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LearnComponent'};
 </script>

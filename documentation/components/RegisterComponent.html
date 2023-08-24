@@ -458,15 +458,15 @@ export class RegisterComponent {
 &lt;form class&#x3D;&quot;col-12 col-lg-4 offset-lg-4 mt-5&quot;&gt;
   &lt;h4&gt;Registrieren&lt;/h4&gt;
   &lt;div class&#x3D;&quot;form-floating mt-4 mb-3&quot;&gt;
-    &lt;input type&#x3D;&quot;email&quot; class&#x3D;&quot;form-control&quot; ngModel #emailField id&#x3D;&quot;emailField&quot; placeholder&#x3D;&quot;max.mustermann@mail.de&quot;&gt;
+    &lt;input type&#x3D;&quot;email&quot; class&#x3D;&quot;form-control&quot; ngModel name&#x3D;&quot;emailField&quot; #emailField id&#x3D;&quot;emailField&quot; placeholder&#x3D;&quot;max.mustermann@mail.de&quot;&gt;
     &lt;label for&#x3D;&quot;emailField&quot;&gt;E-Mail&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class&#x3D;&quot;form-floating mb-3&quot;&gt;
-    &lt;input type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; ngModel #passwordFieldFirst id&#x3D;&quot;passwordFieldFirst&quot;&gt;
+    &lt;input type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; ngModel name&#x3D;&quot;passwordFieldFirst&quot; #passwordFieldFirst id&#x3D;&quot;passwordFieldFirst&quot;&gt;
     &lt;label for&#x3D;&quot;passwordFieldFirst&quot;&gt;Passwort&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class&#x3D;&quot;form-floating mb-4&quot;&gt;
-    &lt;input type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; ngModel #passwordFieldSecond id&#x3D;&quot;passwordFieldSecond&quot;&gt;
+    &lt;input type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; ngModel  name&#x3D;&quot;passwordFieldSecond&quot; #passwordFieldSecond id&#x3D;&quot;passwordFieldSecond&quot;&gt;
     &lt;label for&#x3D;&quot;passwordField&quot;&gt;Passwort wiederholen&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class&#x3D;&quot;form-group d-flex&quot;&gt;
@@ -502,8 +502,8 @@ export class RegisterComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav>  <ol class="breadcrumb my-3">    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>    <li class="breadcrumb-item"><a routerLink="/login">Anmelden</a></li>    <li class="breadcrumb-item active">Registrieren</li>  </ol></nav><form class="col-12 col-lg-4 offset-lg-4 mt-5">  <h4>Registrieren</h4>  <div class="form-floating mt-4 mb-3">    <input type="email" class="form-control" ngModel #emailField id="emailField" placeholder="max.mustermann@mail.de">    <label for="emailField">E-Mail</label>  </div>  <div class="form-floating mb-3">    <input type="password" class="form-control" ngModel #passwordFieldFirst id="passwordFieldFirst">    <label for="passwordFieldFirst">Passwort</label>  </div>  <div class="form-floating mb-4">    <input type="password" class="form-control" ngModel #passwordFieldSecond id="passwordFieldSecond">    <label for="passwordField">Passwort wiederholen</label>  </div>  <div class="form-group d-flex">    <button type="button" class="btn btn-success flex-fill me-3" (click)="onRegisterClick()">Registrieren</button>    <button type="button" class="btn btn-secondary" routerLink="/login">Abbrechen</button>  </div></form></div>'
-    var COMPONENTS = [{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'}];
+        var COMPONENT_TEMPLATE = '<div><nav>  <ol class="breadcrumb my-3">    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>    <li class="breadcrumb-item"><a routerLink="/login">Anmelden</a></li>    <li class="breadcrumb-item active">Registrieren</li>  </ol></nav><form class="col-12 col-lg-4 offset-lg-4 mt-5">  <h4>Registrieren</h4>  <div class="form-floating mt-4 mb-3">    <input type="email" class="form-control" ngModel name="emailField" #emailField id="emailField" placeholder="max.mustermann@mail.de">    <label for="emailField">E-Mail</label>  </div>  <div class="form-floating mb-3">    <input type="password" class="form-control" ngModel name="passwordFieldFirst" #passwordFieldFirst id="passwordFieldFirst">    <label for="passwordFieldFirst">Passwort</label>  </div>  <div class="form-floating mb-4">    <input type="password" class="form-control" ngModel  name="passwordFieldSecond" #passwordFieldSecond id="passwordFieldSecond">    <label for="passwordField">Passwort wiederholen</label>  </div>  <div class="form-group d-flex">    <button type="button" class="btn btn-success flex-fill me-3" (click)="onRegisterClick()">Registrieren</button>    <button type="button" class="btn btn-secondary" routerLink="/login">Abbrechen</button>  </div></form></div>'
+    var COMPONENTS = [{'name': 'CheckComponent', 'selector': 'llce-check'},{'name': 'ExamComponent', 'selector': 'llce-exam'},{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'RegisterComponent'};
 </script>

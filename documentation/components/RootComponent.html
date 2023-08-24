@@ -143,7 +143,9 @@ export class RootComponent {
         <pre class="line-numbers"><code class="language-html">&lt;llce-header/&gt;
 
 &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div style&#x3D;&quot;height: 5rem; width: 100%;&quot;&gt;&lt;/div&gt;
     &lt;router-outlet/&gt;
+    &lt;div style&#x3D;&quot;height: 6rem; width: 100%;&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;llce-footer/&gt;</code></pre>
@@ -175,8 +177,8 @@ export class RootComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><llce-header/><div class="container">    <router-outlet/></div><llce-footer/></div>'
-    var COMPONENTS = [{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'}];
+        var COMPONENT_TEMPLATE = '<div><llce-header/><div class="container">    <div style="height: 5rem; width: 100%;"></div>    <router-outlet/>    <div style="height: 6rem; width: 100%;"></div></div><llce-footer/></div>'
+    var COMPONENTS = [{'name': 'CheckComponent', 'selector': 'llce-check'},{'name': 'ExamComponent', 'selector': 'llce-exam'},{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'RootComponent'};
 </script>
