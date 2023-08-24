@@ -186,7 +186,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/learn/learn.component.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/learn/learn.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -272,15 +272,15 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>getAnswer(qanswers: literal type[])</code>
+                    <code>getAnswer(qanswers: <a href="../interfaces/Answer.html" target="_self">Answer[]</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="42"
-                            class="link-to-prism">src/app/learn/learn.component.ts:42</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/learn/learn.component.ts:36</a></div>
                 </td>
             </tr>
 
@@ -303,7 +303,7 @@
                                 <tr>
                                     <td>qanswers</td>
                                     <td>
-                                            <code>literal type[]</code>
+                                                <code><a href="../interfaces/Answer.html" target="_self" >Answer[]</a></code>
                                     </td>
 
                                     <td>
@@ -350,8 +350,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="28"
-                            class="link-to-prism">src/app/learn/learn.component.ts:28</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/learn/learn.component.ts:22</a></div>
                 </td>
             </tr>
 
@@ -421,8 +421,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="32"
-                            class="link-to-prism">src/app/learn/learn.component.ts:32</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/learn/learn.component.ts:26</a></div>
                 </td>
             </tr>
 
@@ -492,8 +492,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="36"
-                            class="link-to-prism">src/app/learn/learn.component.ts:36</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/app/learn/learn.component.ts:30</a></div>
                 </td>
             </tr>
 
@@ -573,7 +573,7 @@
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>    <code>literal type[]</code>
+                        <i>Type : </i>        <code><a href="../interfaces/Question.html" target="_self" >Question[]</a></code>
 
                     </td>
                 </tr>
@@ -584,7 +584,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/learn/learn.component.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/learn/learn.component.ts:14</a></div>
                         </td>
                     </tr>
 
@@ -616,7 +616,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/learn/learn.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/learn/learn.component.ts:13</a></div>
                         </td>
                     </tr>
 
@@ -633,6 +633,8 @@
 import { Title } from &#x27;@angular/platform-browser&#x27;;
 import { UserService } from &#x27;../services/user/user.service&#x27;;
 import { Location } from &#x27;@angular/common&#x27;;
+import { Answer } from &#x27;../models/Answer&#x27;;
+import { Question } from &#x27;../models/Question&#x27;;
 
 @Component({
   selector: &#x27;llce-learn&#x27;,
@@ -640,16 +642,8 @@ import { Location } from &#x27;@angular/common&#x27;;
 })
 export class LearnComponent {
   public poolId: number &#x3D; 2;
+  public items: Question[] &#x3D; [];
 
-  public items: {
-    qid: string,
-    qtxt: string[],
-    qanswers: {
-      txt: string[],
-      correct: boolean
-    }[]
-  }[] &#x3D; [];
-  
   constructor(private loc: Location, private titleService: Title, private userService: UserService) {
     this.titleService.setTitle(&quot;LLCE - Lernmodus&quot;);
     this.poolId &#x3D; (this.loc.getState() as {poolId: any}).poolId;
@@ -670,8 +664,18 @@ export class LearnComponent {
     this.userService.toggleMarked(this.poolId, id);
   }
 
-  public getAnswer(qanswers: { txt: string[]; correct?: boolean; }[]): string {
-    return qanswers.filter(i &#x3D;&gt; i?.correct ?? true).map(i &#x3D;&gt; i.txt).join()
+  public getAnswer(qanswers: Answer[]): string {
+    let correctAnswers: string[][] &#x3D; qanswers.filter(i &#x3D;&gt; i?.correct ?? true).map(i &#x3D;&gt; i.txt);
+    
+    return correctAnswers.map(answer &#x3D;&gt; {
+      return answer.map(txt &#x3D;&gt; {
+        if (txt.startsWith(&quot;A.&quot;) || txt.startsWith(&quot;B.&quot;) || txt.startsWith(&quot;C.&quot;) || txt.startsWith(&quot;D.&quot;) || txt.startsWith(&quot;E.&quot;)) {
+          return txt.slice(2).trim();
+        } else {
+          return txt.trim();
+        }
+      }).join(&quot;\n&quot;);
+    }).join(&quot;\n&quot;);
   }
 }</code></pre>
     </div>
@@ -695,21 +699,17 @@ export class LearnComponent {
             &lt;div *ngFor&#x3D;&quot;let item of items&quot; class&#x3D;&quot;accordion-item&quot;&gt;
                 &lt;div clas&#x3D;&quot;accordion-header&quot;&gt;
                     &lt;button [style.background-color]&#x3D;&quot;getBgColor(item.qid)&quot; class&#x3D;&quot;accordion-button collapsed&quot; type&#x3D;&quot;button&quot; data-bs-toggle&#x3D;&quot;collapse&quot; [attr.data-bs-target]&#x3D;&quot;&#x27;#collapse-&#x27; + item.qid&quot;&gt;
-                        &lt;p class&#x3D;&quot;fw-medium text-light my-auto mx-3&quot;&gt;{{item.qid}}.&lt;/p&gt;
-                        &lt;p class&#x3D;&quot;fw-medium text-light my-2&quot;&gt;{{item.qtxt}}&lt;/p&gt;
+                        &lt;p class&#x3D;&quot;fw-medium my-auto mx-3&quot;&gt;{{item.qid}}.&lt;/p&gt;
+                        &lt;p class&#x3D;&quot;fw-medium my-2&quot;&gt;{{item.qtxt}}&lt;/p&gt;
                     &lt;/button&gt;
                 &lt;/div&gt;
                 &lt;div [id]&#x3D;&quot;&#x27;collapse-&#x27; + item.qid&quot; class&#x3D;&quot;accordion-collapse collapse&quot; data-bs-parent&#x3D;&quot;#accordionList&quot;&gt;
                     &lt;div class&#x3D;&quot;accordion-body d-flex&quot;&gt;
-                      &lt;p class&#x3D;&quot;ms-5 me-3 my-auto text-secondary&quot;&gt;{{getAnswer(item.qanswers)}}&lt;/p&gt;
+                      &lt;p class&#x3D;&quot;ms-5 me-3 my-auto text-secondary withNewlines&quot;&gt;{{getAnswer(item.qanswers)}}&lt;/p&gt;
                       &lt;button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;onToggle($event, item.qid)&quot; class&#x3D;&quot;btn btn-primary my-auto ms-auto&quot;&gt;{{getMerkenButton(item.qid)}}&lt;/button&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
-            
-            &lt;!-- 
-                *ngIf&#x3D;&quot;item.isValid&quot;
-            --&gt; 
         &lt;/div&gt;
     &lt;/div&gt;
 
@@ -745,7 +745,7 @@ export class LearnComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav>    <ol class="breadcrumb my-3">        <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>        <li class="breadcrumb-item active">Lernmodus</li>    </ol></nav><div class="card mt-5">    <h4 class="card-header py-3">      Alle Fragen    </h4>    <div class="card-body">        <div class="accordion" id="accordionList">            <div *ngFor="let item of items" class="accordion-item">                <div clas="accordion-header">                    <button [style.background-color]="getBgColor(item.qid)" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="\'#collapse-\' + item.qid">                        <p class="fw-medium text-light my-auto mx-3">{{item.qid}}.</p>                        <p class="fw-medium text-light my-2">{{item.qtxt}}</p>                    </button>                </div>                <div [id]="\'collapse-\' + item.qid" class="accordion-collapse collapse" data-bs-parent="#accordionList">                    <div class="accordion-body d-flex">                      <p class="ms-5 me-3 my-auto text-secondary">{{getAnswer(item.qanswers)}}</p>                      <button type="button" (click)="onToggle($event, item.qid)" class="btn btn-primary my-auto ms-auto">{{getMerkenButton(item.qid)}}</button>                    </div>                </div>            </div>                        <!--                 *ngIf="item.isValid"            -->         </div>    </div>    <div class="card-footer pt-4">      <button type="button" routerLink="/home" class="btn w-25 btn-primary">Zurück</button>    </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><nav>    <ol class="breadcrumb my-3">        <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>        <li class="breadcrumb-item active">Lernmodus</li>    </ol></nav><div class="card mt-5">    <h4 class="card-header py-3">      Alle Fragen    </h4>    <div class="card-body">        <div class="accordion" id="accordionList">            <div *ngFor="let item of items" class="accordion-item">                <div clas="accordion-header">                    <button [style.background-color]="getBgColor(item.qid)" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="\'#collapse-\' + item.qid">                        <p class="fw-medium my-auto mx-3">{{item.qid}}.</p>                        <p class="fw-medium my-2">{{item.qtxt}}</p>                    </button>                </div>                <div [id]="\'collapse-\' + item.qid" class="accordion-collapse collapse" data-bs-parent="#accordionList">                    <div class="accordion-body d-flex">                      <p class="ms-5 me-3 my-auto text-secondary withNewlines">{{getAnswer(item.qanswers)}}</p>                      <button type="button" (click)="onToggle($event, item.qid)" class="btn btn-primary my-auto ms-auto">{{getMerkenButton(item.qid)}}</button>                    </div>                </div>            </div>        </div>    </div>    <div class="card-footer pt-4">      <button type="button" routerLink="/home" class="btn w-25 btn-primary">Zurück</button>    </div></div></div>'
     var COMPONENTS = [{'name': 'CheckComponent', 'selector': 'llce-check'},{'name': 'ExamComponent', 'selector': 'llce-exam'},{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'},{'name': 'TaskComponent', 'selector': 'llce-task'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LearnComponent'};

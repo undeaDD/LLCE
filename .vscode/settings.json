@@ -13,7 +13,8 @@
     "package-lock.json": true,
     "tsconfig.*": true,
     "node_modules/": true,
-    "package.json": true,
     "angular.json": true,
+    "dist/**": true,
+    "src/assets/docs/**": true
   }
 }
