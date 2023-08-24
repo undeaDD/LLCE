@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
   selector: 'llce-privacy',
   templateUrl: './privacy.component.html'
 })
-export class PrivacyComponent {
-
-}
+export class PrivacyComponent { }

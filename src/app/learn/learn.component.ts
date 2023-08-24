@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { UserService } from '../services/user/user.service';
 import { Location } from '@angular/common';
+import { Answer } from '../models/Answer';
+import { Question } from '../models/Question';
 
 @Component({
   selector: 'llce-learn',
@@ -9,16 +11,8 @@ import { Location } from '@angular/common';
 })
 export class LearnComponent {
   public poolId: number = 2;
+  public items: Question[] = [];
 
-  public items: {
-    qid: string,
-    qtxt: string[],
-    qanswers: {
-      txt: string[],
-      correct: boolean
-    }[]
-  }[] = [];
-  
   constructor(private loc: Location, private titleService: Title, private userService: UserService) {
     this.titleService.setTitle("LLCE - Lernmodus");
     this.poolId = (this.loc.getState() as {poolId: any}).poolId;
@@ -39,7 +33,17 @@ export class LearnComponent {
     this.userService.toggleMarked(this.poolId, id);
   }
 
-  public getAnswer(qanswers: { txt: string[]; correct?: boolean; }[]): string {
-    return qanswers.filter(i => i?.correct ?? true).map(i => i.txt).join()
+  public getAnswer(qanswers: Answer[]): string {
+    let correctAnswers: string[][] = qanswers.filter(i => i?.correct ?? true).map(i => i.txt);
+    
+    return correctAnswers.map(answer => {
+      return answer.map(txt => {
+        if (txt.startsWith("A.") || txt.startsWith("B.") || txt.startsWith("C.") || txt.startsWith("D.") || txt.startsWith("E.")) {
+          return txt.slice(2).trim();
+        } else {
+          return txt.trim();
+        }
+      }).join("\n");
+    }).join("\n");
   }
 }

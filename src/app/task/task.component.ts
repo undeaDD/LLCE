@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './task.component.html',
   host: {'class': 'flex-fill d-flex flex-column'}
 })
-export class TaskComponent {
-
-}
+export class TaskComponent { }

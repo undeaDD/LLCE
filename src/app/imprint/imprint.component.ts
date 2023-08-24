@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
   selector: 'llce-imprint',
   templateUrl: './imprint.component.html'
 })
-export class ImprintComponent {
-
-}
+export class ImprintComponent { }

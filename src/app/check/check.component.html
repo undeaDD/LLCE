@@ -9,58 +9,35 @@
 
     <h4 class="card-header d-flex justify-content-between py-3">
         <!-- Fragen Titel -->
-        <div class="me-2">Frage 1 von 20:</div>
+        <div class="me-2">Frage {{currentIndex + 1}} von {{shuffledItems.length}}:</div>
     </h4>
 
     <div class="card-body row">
         <div class="col-12 mb-4">
-            <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet?</h4>
+            <h4>{{shuffledItems[currentIndex].qtxt}}</h4>
         </div>
         <hr>
         <div class="col-12 mb-4">
-            <!-- Antwort Titel -->
-            <h4>Bitte eine Antwort auswählen:</h4>
-
-            <!-- Antwort anzeigen Button -->
-            <div class="list-group">
-                <a href="#"
-                    class="list-group-item list-group-item-action active">Antwort
-                    anzeigen</a>
-            </div>
+            <!-- Antwort Titel, jeh nach qtyp -->
+            <h4 *ngIf="shuffledItems[currentIndex].qtyp === 'sc'"class="mb-4">Bitte die Antwort auswählen:</h4>
+            <h4 *ngIf="shuffledItems[currentIndex].qtyp === 'mc'"class="mb-4">Bitte alle möglichen Antworten auswählen:</h4>
+            <h4 *ngIf="shuffledItems[currentIndex].qtyp === 'fi'"class="mb-4">Bitte die Antwort eingeben:</h4>
 
             <!-- User Input Type -->
-            <textarea class="form-control" id="exampleFormControlTextarea"
+            <textarea [value]="userInput" *ngIf="shuffledItems[currentIndex].qtyp === 'fi'" class="form-control" id="exampleFormControlTextarea"
                 rows="6"></textarea>
 
             <!-- Single / Multiple Choice -->
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">Antwort
-                    1</a>
-                <a href="#"
-                    class="list-group-item list-group-item-action active">Antwort
-                    2</a>
-                <a href="#" class="list-group-item list-group-item-action">Antwort
-                    3</a>
-                <a href="#" class="list-group-item list-group-item-action">Antwort
-                    4</a>
-            </div>
-
-            <div class="progress-stacked">
-                <div class="progress" role="progressbar"
-                    style="width:calc(100% / 7);">
-                    <div class="progress-bar bg-warning"></div>
+            <div *ngIf="shuffledItems[currentIndex].qtyp !== 'fi'" class="list-group">
+                <div *ngFor="let answer of shuffledItems[currentIndex].qanswers; let i = index" >
+                    <a href="#" class="list-group-item list-group-item-action">{{answer.txt}}</a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="card-footer d-flex justify-content-evenly py-4">
-        <button class="btn btn-danger w-20">Zurück</button>
-        <button class="btn btn-primary w-20">Merken</button>
+        <button class="btn btn-danger w-20" (click)="onBack" >Zurück</button>
         <button class="btn btn-success w-20">Weiter</button>
         <button class="btn btn-danger w-20">Beenden</button>
     </div>

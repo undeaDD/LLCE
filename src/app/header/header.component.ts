@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavigationStart, Router } from '@angular/router';
-import { Title } from '@angular/platform-browser';
 import { UserService } from '../services/user/user.service';
 
 @Component({
@@ -9,10 +8,22 @@ import { UserService } from '../services/user/user.service';
 })
 export class HeaderComponent {
   
+  public themeName = "☀️";
+
+  public toggleTheme() {
+    if (this.themeName === "☀️") {
+      this.themeName = "🌙";
+      document.documentElement.setAttribute('data-bs-theme','light');
+    } else {
+      this.themeName = "☀️";
+      document.documentElement.setAttribute('data-bs-theme','dark');
+    }
+  }
+
   public showLoginButton = true;
   public showLogoutButton = false;
 
-  constructor(private titleService: Title, private router: Router, private userService: UserService) {
+  constructor(router: Router, private userService: UserService) {
     router.events.forEach((event) => {
       if(event instanceof NavigationStart) {
         this.onNavigationChange(event.url);
@@ -22,6 +33,8 @@ export class HeaderComponent {
 
   public onNavigationChange(route: string) {
     switch (route) {
+      case "/":
+        // automatically gets redirected to home wihtout new navigationStateChange Event being fired ...
       case "/home":
         if(this.userService.user.isLoggedIn) {
           this.showLoginButton = false;
