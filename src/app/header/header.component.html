@@ -11,8 +11,9 @@
 
         <div class="collapse navbar-collapse" id="navbarToggle">
         <form class="d-flex ms-auto my-2 my-lg-0">
-            <button *ngIf="showLoginButton" class="btn btn-success ms-auto my-3 my-md-0" routerLink="/login" type="button">Anmelden</button>
-            <button *ngIf="showLogoutButton" class="btn btn-danger ms-auto my-3 my-md-0" (click)="onLogout()" type="button">Abmelden</button>
+            <button class="btn btn-secondary ms-auto my-3 my-md-0" routerLink="/task" type="button">Aufgabe</button>
+            <button *ngIf="showLoginButton" class="btn btn-success ms-3 my-3 my-md-0" routerLink="/login" type="button">Anmelden</button>
+            <button *ngIf="showLogoutButton" class="btn btn-danger ms-3 my-3 my-md-0" (click)="onLogout()" type="button">Abmelden</button>
         </form>
         </div>
     </div>

@@ -8,6 +8,7 @@ import { PrivacyComponent } from '../privacy/privacy.component';
 import { LearnComponent } from '../learn/learn.component';
 import { CheckComponent } from '../check/check.component';
 import { ExamComponent } from '../exam/exam.component';
+import { TaskComponent } from '../task/task.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'learn', component: LearnComponent},
   {path: 'check', component: CheckComponent},
   {path: 'exam', component: ExamComponent},
+  {path: 'task', component: TaskComponent},
   {path: '**', redirectTo: "/home" }
 ];
 

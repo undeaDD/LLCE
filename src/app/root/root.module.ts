@@ -18,6 +18,7 @@ import { PrivacyComponent } from '../privacy/privacy.component';
 import { FormsModule } from '@angular/forms';
 import { CheckComponent } from '../check/check.component';
 import { ExamComponent } from '../exam/exam.component';
+import { TaskComponent } from '../task/task.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ExamComponent } from '../exam/exam.component';
     PrivacyComponent,
     RegisterComponent,
     RootComponent,
+    TaskComponent
   ],
   imports: [
     FormsModule,
