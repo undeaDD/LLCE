@@ -38,7 +38,7 @@
   <li class="breadcrumb-item">Components</li>
   <li class="breadcrumb-item"
   >
-  ExamComponent</li>
+  TaskComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -65,7 +65,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/exam/exam.component.ts</code>
+    <code>src/app/task/task.component.ts</code>
 </p>
 
 
@@ -83,6 +83,10 @@
 
 
 
+            <tr>
+                <td class="col-md-3">host</td>
+                <td class="col-md-9"><code>{<br>}</code></td>
+            </tr>
 
 
 
@@ -91,7 +95,7 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>llce-exam</code></td>
+                <td class="col-md-9"><code>llce-task</code></td>
             </tr>
 
 
@@ -101,7 +105,7 @@
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./exam.component.html</code></td>
+                <td class="col-md-9"><code>./task.component.html</code></td>
             </tr>
 
 
@@ -130,10 +134,11 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
 
 @Component({
-  selector: &#x27;llce-exam&#x27;,
-  templateUrl: &#x27;./exam.component.html&#x27;
+  selector: &#x27;llce-task&#x27;,
+  templateUrl: &#x27;./task.component.html&#x27;,
+  host: {&#x27;class&#x27;: &#x27;flex-fill d-flex flex-column&#x27;}
 })
-export class ExamComponent {
+export class TaskComponent {
 
 }
 </code></pre>
@@ -143,74 +148,14 @@ export class ExamComponent {
         <pre class="line-numbers"><code class="language-html">&lt;nav&gt;
     &lt;ol class&#x3D;&quot;breadcrumb my-3&quot;&gt;
         &lt;li class&#x3D;&quot;breadcrumb-item&quot;&gt;&lt;a routerLink&#x3D;&quot;/home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-        &lt;li class&#x3D;&quot;breadcrumb-item active&quot;&gt;Exammodus&lt;/li&gt;
+        &lt;li class&#x3D;&quot;breadcrumb-item active&quot;&gt;Aufgabe&lt;/li&gt;
     &lt;/ol&gt;
 &lt;/nav&gt;
 
-&lt;div class&#x3D;&quot;card my-4&quot;&gt;
-
-    &lt;h4 class&#x3D;&quot;card-header d-flex justify-content-between py-3&quot;&gt;
-        &lt;!-- Fragen Titel --&gt;
-        &lt;div class&#x3D;&quot;me-2&quot;&gt;Frage 1 von 20:&lt;/div&gt;
-
-        &lt;!-- Countdown --&gt;
-        &lt;div class&#x3D;&quot;ms-auto&quot;&gt;00:00:00&lt;/div&gt;
-    &lt;/h4&gt;
-
-    &lt;div class&#x3D;&quot;card-body row&quot;&gt;
-        &lt;div class&#x3D;&quot;col-12 mb-4&quot;&gt;
-            &lt;h4&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet?&lt;/h4&gt;
-        &lt;/div&gt;
-        &lt;hr&gt;
-        &lt;div class&#x3D;&quot;col-12 mb-4&quot;&gt;
-            &lt;!-- Antwort Titel --&gt;
-            &lt;h4&gt;Bitte eine Antwort auswählen:&lt;/h4&gt;
-
-            &lt;!-- Antwort anzeigen Button --&gt;
-            &lt;div class&#x3D;&quot;list-group&quot;&gt;
-                &lt;a href&#x3D;&quot;#&quot;
-                    class&#x3D;&quot;list-group-item list-group-item-action active&quot;&gt;Antwort
-                    anzeigen&lt;/a&gt;
-            &lt;/div&gt;
-
-            &lt;!-- User Input Type --&gt;
-            &lt;textarea class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleFormControlTextarea&quot;
-                rows&#x3D;&quot;6&quot;&gt;&lt;/textarea&gt;
-
-            &lt;!-- Single / Multiple Choice --&gt;
-            &lt;div class&#x3D;&quot;list-group&quot;&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;list-group-item list-group-item-action&quot;&gt;Antwort
-                    1&lt;/a&gt;
-                &lt;a href&#x3D;&quot;#&quot;
-                    class&#x3D;&quot;list-group-item list-group-item-action active&quot;&gt;Antwort
-                    2&lt;/a&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;list-group-item list-group-item-action&quot;&gt;Antwort
-                    3&lt;/a&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;list-group-item list-group-item-action&quot;&gt;Antwort
-                    4&lt;/a&gt;
-            &lt;/div&gt;
-
-            &lt;div class&#x3D;&quot;progress-stacked&quot;&gt;
-                &lt;div class&#x3D;&quot;progress&quot; role&#x3D;&quot;progressbar&quot;
-                    style&#x3D;&quot;width:calc(100% / 7);&quot;&gt;
-                    &lt;div class&#x3D;&quot;progress-bar bg-warning&quot;&gt;&lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class&#x3D;&quot;card-footer d-flex justify-content-evenly py-4&quot;&gt;
-        &lt;button class&#x3D;&quot;btn btn-danger w-20&quot;&gt;Zurück&lt;/button&gt;
-        &lt;button class&#x3D;&quot;btn btn-primary w-20&quot;&gt;Merken&lt;/button&gt;
-        &lt;button class&#x3D;&quot;btn btn-success w-20&quot;&gt;Weiter&lt;/button&gt;
-        &lt;button class&#x3D;&quot;btn btn-danger w-20&quot;&gt;Beenden&lt;/button&gt;
-    &lt;/div&gt;
-
-&lt;/div&gt;</code></pre>
+&lt;object class&#x3D;&quot;flex-fill&quot; data&#x3D;&quot;./assets/pdf/task.pdf&quot; type&#x3D;&#x27;application/pdf&#x27;&gt;
+    &lt;p&gt;Pdf kann nicht angezeigt werden :(&lt;/p&gt;
+    &lt;a href&#x3D;&quot;./assets/pdf/task.pdf&quot; target&#x3D;&quot;_blank&quot;&gt;Pdf Download&lt;/a&gt;
+&lt;/object&gt;</code></pre>
     </div>
 
 
@@ -239,10 +184,10 @@ export class ExamComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav>    <ol class="breadcrumb my-3">        <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>        <li class="breadcrumb-item active">Exammodus</li>    </ol></nav><div class="card my-4">    <h4 class="card-header d-flex justify-content-between py-3">        <!-- Fragen Titel -->        <div class="me-2">Frage 1 von 20:</div>        <!-- Countdown -->        <div class="ms-auto">00:00:00</div>    </h4>    <div class="card-body row">        <div class="col-12 mb-4">            <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed                diam nonumy eirmod tempor invidunt ut labore et dolore magna                aliquyam erat, sed diam voluptua. At vero eos et accusam et                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea                takimata sanctus est Lorem ipsum dolor sit amet?</h4>        </div>        <hr>        <div class="col-12 mb-4">            <!-- Antwort Titel -->            <h4>Bitte eine Antwort auswählen:</h4>            <!-- Antwort anzeigen Button -->            <div class="list-group">                <a href="#"                    class="list-group-item list-group-item-action active">Antwort                    anzeigen</a>            </div>            <!-- User Input Type -->            <textarea class="form-control" id="exampleFormControlTextarea"                rows="6"></textarea>            <!-- Single / Multiple Choice -->            <div class="list-group">                <a href="#" class="list-group-item list-group-item-action">Antwort                    1</a>                <a href="#"                    class="list-group-item list-group-item-action active">Antwort                    2</a>                <a href="#" class="list-group-item list-group-item-action">Antwort                    3</a>                <a href="#" class="list-group-item list-group-item-action">Antwort                    4</a>            </div>            <div class="progress-stacked">                <div class="progress" role="progressbar"                    style="width:calc(100% / 7);">                    <div class="progress-bar bg-warning"></div>                </div>            </div>        </div>    </div>    <div class="card-footer d-flex justify-content-evenly py-4">        <button class="btn btn-danger w-20">Zurück</button>        <button class="btn btn-primary w-20">Merken</button>        <button class="btn btn-success w-20">Weiter</button>        <button class="btn btn-danger w-20">Beenden</button>    </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><nav>    <ol class="breadcrumb my-3">        <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>        <li class="breadcrumb-item active">Aufgabe</li>    </ol></nav><object class="flex-fill" data="./assets/pdf/task.pdf" type=\'application/pdf\'>    <p>Pdf kann nicht angezeigt werden :(</p>    <a href="./assets/pdf/task.pdf" target="_blank">Pdf Download</a></object></div>'
     var COMPONENTS = [{'name': 'CheckComponent', 'selector': 'llce-check'},{'name': 'ExamComponent', 'selector': 'llce-exam'},{'name': 'FooterComponent', 'selector': 'llce-footer'},{'name': 'HeaderComponent', 'selector': 'llce-header'},{'name': 'HomeComponent', 'selector': 'llce-home'},{'name': 'ImprintComponent', 'selector': 'llce-imprint'},{'name': 'LearnComponent', 'selector': 'llce-learn'},{'name': 'LoginComponent', 'selector': 'llce-login'},{'name': 'PrivacyComponent', 'selector': 'llce-privacy'},{'name': 'RegisterComponent', 'selector': 'llce-register'},{'name': 'RootComponent', 'selector': 'llce-root'},{'name': 'TaskComponent', 'selector': 'llce-task'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'ExamComponent'};
+    var ACTUAL_COMPONENT = {'name': 'TaskComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -288,7 +233,7 @@ export class ExamComponent {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'ExamComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'TaskComponent.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
