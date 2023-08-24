@@ -6,6 +6,8 @@ import { RegisterComponent } from '../register/register.component';
 import { ImprintComponent } from '../imprint/imprint.component';
 import { PrivacyComponent } from '../privacy/privacy.component';
 import { LearnComponent } from '../learn/learn.component';
+import { CheckComponent } from '../check/check.component';
+import { ExamComponent } from '../exam/exam.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path: 'imprint', component: ImprintComponent},
   {path: 'privacy', component: PrivacyComponent},
   {path: 'learn', component: LearnComponent},
+  {path: 'check', component: CheckComponent},
+  {path: 'exam', component: ExamComponent},
   {path: '**', redirectTo: "/home" }
 ];
 

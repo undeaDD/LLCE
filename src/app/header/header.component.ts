@@ -40,13 +40,6 @@ export class HeaderComponent {
 
   public onLogout() {
     let result = confirm("Willst du dich wirklich abmelden?");
-
-    if (result) {
-      this.userService.user = {
-        isGuest: false,
-        isLoggedIn: false
-      };
-      this.router.navigate(["home"]);
-    }
+    if (result) { window.location.reload(); }
   }
 }

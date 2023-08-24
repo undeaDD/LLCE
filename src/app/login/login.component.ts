@@ -28,7 +28,9 @@ export class LoginComponent {
       this.userService.user = {
         email: email,
         isGuest: false,
-        isLoggedIn: true
+        isLoggedIn: true,
+        marked1: new Set(),
+        marked2: new Set()
       };
       this.router.navigate(["home"]);
     } else {
@@ -40,7 +42,9 @@ export class LoginComponent {
     this.userService.user = {
       email: undefined,
       isGuest: true,
-      isLoggedIn: true
+      isLoggedIn: true,
+      marked1: new Set(),
+      marked2: new Set()
     };
     this.router.navigate(["home"]);
   }

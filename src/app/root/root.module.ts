@@ -15,10 +15,15 @@ import { LearnComponent } from '../learn/learn.component';
 import { HomeComponent } from '../home/home.component';
 import { ImprintComponent } from '../imprint/imprint.component';
 import { PrivacyComponent } from '../privacy/privacy.component';
+import { FormsModule } from '@angular/forms';
+import { CheckComponent } from '../check/check.component';
+import { ExamComponent } from '../exam/exam.component';
 
 
 @NgModule({
   declarations: [
+    CheckComponent,
+    ExamComponent,
     FooterComponent,
     HeaderComponent,
     HomeComponent,
@@ -27,9 +32,10 @@ import { PrivacyComponent } from '../privacy/privacy.component';
     LoginComponent,
     PrivacyComponent,
     RegisterComponent,
-    RootComponent
+    RootComponent,
   ],
   imports: [
+    FormsModule,
     CommonModule,
     BrowserModule,
     RootRoutingModule
