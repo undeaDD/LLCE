@@ -4,4 +4,7 @@ import { Component } from '@angular/core';
   selector: 'llce-exam',
   templateUrl: './exam.component.html'
 })
-export class ExamComponent { }
+export class ExamComponent { 
+  public isFinished = false;
+
+}

@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { CheckComponent } from '../check/check.component';
 import { ExamComponent } from '../exam/exam.component';
 import { TaskComponent } from '../task/task.component';
-
+import { LeaveGuard } from '../services/leave/leaveguard';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,8 @@ import { TaskComponent } from '../task/task.component';
   providers: [
     Title,
     UserService,
-    ApiService
+    ApiService,
+    LeaveGuard
   ],
   bootstrap: [
     RootComponent

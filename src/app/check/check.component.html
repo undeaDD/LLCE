@@ -30,16 +30,16 @@
             <!-- Single / Multiple Choice -->
             <div *ngIf="shuffledItems[currentIndex].qtyp !== 'fi'" class="list-group">
                 <div *ngFor="let answer of shuffledItems[currentIndex].qanswers; let i = index" >
-                    <a href="#" class="list-group-item list-group-item-action">{{answer.txt}}</a>
+                    <a (click)="onAnswerSelect(i)" class="list-group-item list-group-item-action">{{answer.txt}}</a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="card-footer d-flex justify-content-evenly py-4">
-        <button class="btn btn-danger w-20" (click)="onBack" >Zurück</button>
-        <button class="btn btn-success w-20">Weiter</button>
-        <button class="btn btn-danger w-20">Beenden</button>
+        <button class="btn btn-primary w-20" [disabled]="buttonBackDisabled" (click)="onBack()">Vorherige Frage</button>
+        <button class="btn btn-primary w-20" [disabled]="buttonNextDisabled" (click)="onNext()">Nächste Frage</button>
+        <button class="btn btn-success w-20" (click)="onFinish()">Prüfung beenden</button>
+        <button class="btn btn-danger w-20" (click)="onCancel()">Abbrechen</button>
     </div>
-
 </div>

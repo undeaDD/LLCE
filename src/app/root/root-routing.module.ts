@@ -9,6 +9,7 @@ import { LearnComponent } from '../learn/learn.component';
 import { CheckComponent } from '../check/check.component';
 import { ExamComponent } from '../exam/exam.component';
 import { TaskComponent } from '../task/task.component';
+import { LeaveGuard } from '../services/leave/leaveguard';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -17,8 +18,8 @@ const routes: Routes = [
   {path: 'imprint', component: ImprintComponent},
   {path: 'privacy', component: PrivacyComponent},
   {path: 'learn', component: LearnComponent},
-  {path: 'check', component: CheckComponent},
-  {path: 'exam', component: ExamComponent},
+  {path: 'check', canDeactivate: [LeaveGuard], component: CheckComponent},
+  {path: 'exam', canDeactivate: [LeaveGuard], component: ExamComponent},
   {path: 'task', component: TaskComponent},
   {path: '**', redirectTo: "/home" }
 ];
