@@ -5,14 +5,14 @@
     </ol>
 </nav>
 
-<div class="card my-4">
+<div class="card my-4 d-flex flex-fill">
 
     <h4 class="card-header d-flex justify-content-between py-3">
         <!-- Fragen Titel -->
         <div class="me-2">Frage {{currentIndex + 1}} von {{shuffledItems.length}}:</div>
     </h4>
 
-    <div class="card-body row">
+    <div class="card-body row flex-fill">
         <div class="col-12 mb-4">
             <h4>{{shuffledItems[currentIndex].qtxt}}</h4>
         </div>
@@ -24,13 +24,13 @@
             <h4 *ngIf="shuffledItems[currentIndex].qtyp === 'fi'"class="mb-4">Bitte die Antwort eingeben:</h4>
 
             <!-- User Input Type -->
-            <textarea [value]="userInput" *ngIf="shuffledItems[currentIndex].qtyp === 'fi'" class="form-control" id="exampleFormControlTextarea"
+            <textarea [ngModel]="userInput" (ngModelChange)="onTextChange($event)" *ngIf="shuffledItems[currentIndex].qtyp === 'fi'" class="form-control" id="exampleFormControlTextarea"
                 rows="6"></textarea>
 
             <!-- Single / Multiple Choice -->
             <div *ngIf="shuffledItems[currentIndex].qtyp !== 'fi'" class="list-group">
                 <div *ngFor="let answer of shuffledItems[currentIndex].qanswers; let i = index" >
-                    <a (click)="onAnswerSelect(i)" class="list-group-item list-group-item-action">{{answer.txt}}</a>
+                    <a (click)="onAnswerSelect(i)" [ngClass]="selectionArray[i] ? 'active' : ''" class="list-group-item list-group-item-action">{{answer.txt}}</a>
                 </div>
             </div>
         </div>
