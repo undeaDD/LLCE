@@ -5,5 +5,5 @@ export interface Answer {
 
 export interface UserAnswer {
     qtyp: "sc" | "mc" | "fi";
-    answer: number | number[] | string;
+    answer: number | number[] | string | undefined;
 }

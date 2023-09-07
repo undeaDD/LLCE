@@ -10,6 +10,7 @@ import { CheckComponent } from '../check/check.component';
 import { ExamComponent } from '../exam/exam.component';
 import { TaskComponent } from '../task/task.component';
 import { LeaveGuard } from '../services/leave/leaveguard';
+import { ResultComponent } from '../result/result.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'check', canDeactivate: [LeaveGuard], component: CheckComponent},
   {path: 'exam', canDeactivate: [LeaveGuard], component: ExamComponent},
   {path: 'task', component: TaskComponent},
+  {path: 'result', component: ResultComponent},
   {path: '**', redirectTo: "/home" }
 ];
 
