@@ -1,39 +1,54 @@
 [
   {
     "qid": 1,
-    "qtyp": "sc",
+    "qtyp": "fi",
     "qtxt": [
-      "Which type of file system is created by mkfs when it is executed with the block device name only and",
-      "without any additional parameters?"
+      "Which command is used to set the hostname of the local system? (Specify only the command without any",
+      "path or parameters.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. XFS"
+          "hostname"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 2,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following is a valid IPv6 address?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. 2001:db8:0g21::1"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. VFAT"
+          "B. 2001::db8:4581::1"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. ext2"
+          "C. 2001:db8:3241::1"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. ext3"
+          "D. 2001%db8%9990%%1"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. ext4"
+          "E. 2001.db8.819f..1"
         ],
         "correct": false
       }
@@ -42,165 +57,72 @@
     "qinfo": []
   },
   {
-    "qid": 2,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which umask value ensures that new directories can be read, written and listed by their owning user,",
-      "read and listed by their owning group and are not accessible at all for everyone else?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. 0750"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. 0027"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. 0036"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. 7640"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. 0029"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "B",
-    "qinfo": []
-  },
-  {
     "qid": 3,
-    "qtyp": "sc",
+    "qtyp": "fi",
     "qtxt": [
-      "Which of the following commands changes the number of days before the ext3 filesystem on /dev/sda1",
-      "has to run through a full filesystem check while booting?"
+      "What command, depending on its options, can display the open TCP connections, the routing tables, as",
+      "well as network interface statistics? (Specify only the command without any path or parameters.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. tune2fs -d 200 /dev/sda1"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. tune2fs -i 200 /dev/sda1"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. tune2fs -c 200 /dev/sda1"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. tune2fs -n 200 /dev/sda1"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. tune2fs --days 200 /dev/sda1"
-        ],
-        "correct": false
+          "netstat"
+        ]
       }
     ],
-    "qcorrect": "B",
     "qinfo": []
   },
   {
     "qid": 4,
-    "qtyp": "sc",
+    "qtyp": "fi",
     "qtxt": [
-      "Which is the default percentage of reserved space for the root user on new ext4 filesystems?"
+      "Which command included in NetworkManager is a curses application which provides easy acces to the",
+      "NetworkManager on the command line? (Specify only the command without any path or parameters.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. 10%"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. 3%"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. 15%"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. 0%"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. 5%"
-        ],
-        "correct": true
+          "nmtui"
+        ]
       }
     ],
-    "qcorrect": "E",
     "qinfo": []
   },
   {
     "qid": 5,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following is true when a file system, which is neither listed in /etc/fstab nor known to system,",
-      "is mounted manually?"
+      "Which of the following tools, used for DNS debugging, reports not only the response from the name",
+      "sever but also details about the query?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. systemd ignores any manual mounts which are not done using the systemctl mountcommand"
+          "A. dnsq"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. The command systemctl mountsynccan be used to create a mount unit based on the existing mount"
+          "B. hostname"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. systemd automatically generates a mount unit and monitors the mount point without changing it"
+          "C. dig"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. Unless a systemd mount unit is created, systemd unmounts the file system after a short period of time"
+          "D. dnslookup"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. systemctl unmountmust be used to remove the mount because system opens a file descriptor on the mount point"
+          "E. zoneinfo"
         ],
         "correct": false
       }
@@ -210,237 +132,38 @@
   },
   {
     "qid": 6,
-    "qtyp": "fi",
-    "qtxt": [
-      "Which program updates the database that is used by the locate command? (Specify ONLY the command",
-      "without any path or parameters)."
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "updatedb"
-        ]
-      }
-    ],
-    "qinfo": []
-  },
-  {
-    "qid": 7,
     "qtyp": "sc",
     "qtxt": [
-      "What does the command mount --bind do?"
+      "Which of the following statements is valid in the file /etc/nsswitch.conf?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. It makes the contents of one directory available in another directory"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. It mounts all available filesystems to the current directory"
+          "A. multi on"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. It mounts all user mountable filesystems to the user’s home directory"
+          "B. 192.168.168.4 dns-server"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. It mounts all file systems listed in /etc/fstab which have the option userbindset"
+          "C. namespaces: net mount procs"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. It permanently mounts a regular file to a directory"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "A",
-    "qinfo": []
-  },
-  {
-    "qid": 8,
-    "qtyp": "sc",
-    "qtxt": [
-      "Consider the following output from the command ls -i:",
-      "How would a new file named c.txt be created with the same inode number as a.txt (Inode 525385)?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. ln -h a.txt c.txt"
+          "D. include /etc/nsswitch.d/"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. ln c.txt a.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. ln a.txt c.txt"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. ln -f c.txt a.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. ln -i 525385 c.txt"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "C",
-    "qinfo": []
-  },
-  {
-    "qid": 9,
-    "qtyp": "mc",
-    "qtxt": [
-      "Consider the following directory:",
-      " drwxrwxr-x 2 root sales 4096 Jan 1 15:21 sales",
-      "Which command ensures new files created within the directory sales are owned by the group sales?",
-      "(Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. chmod g+s sales"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. setpol -R newgroup=sales sales"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. chgrp -p sales sales"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. chown --persistent *.sales sales"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. chmod 2775 sales"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "AE",
-    "qinfo": []
-  },
-  {
-    "qid": 10,
-    "qtyp": "mc",
-    "qtxt": [],
-    "qanswers": [
-      {
-        "txt": [
-          "A. cat /proc/self/mounts"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. free"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. lsmounts"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. mount"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. cat /proc/filesystems"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "AD",
-    "qinfo": []
-  },
-  {
-    "qid": 11,
-    "qtyp": "fi",
-    "qtxt": [
-      "Which command displays the current disk space usage for all mounted file systems? (Specify ONLY the",
-      "command without any path or parameters.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "df"
-        ]
-      }
-    ],
-    "qinfo": []
-  },
-  {
-    "qid": 12,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which chown command changes the ownership to dave and the group to staff on a file named",
-      "data.txt?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. chown dave/staff data.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. chown -u dave -g staff data.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. chown --user dave --group staff data.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. chown dave+staff data.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. chown dave:staff data.txt"
+          "E. hosts: files dns"
         ],
         "correct": true
       }
@@ -449,141 +172,413 @@
     "qinfo": []
   },
   {
-    "qid": 13,
-    "qtyp": "sc",
+    "qid": 7,
+    "qtyp": "mc",
     "qtxt": [
-      "When considering the use of hard links, what are valid reasons not to use hard links?"
+      "Which of the following connection types, as seen in nmcli connection show, may exist in",
+      "NetworkManager? (Choose three.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. Hard links are not available on all Linux systems because traditional filesystems, such as ext4, do not support them"
+          "A. tcp"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. Each hard link has individual ownership, permissions and ACLs which can lead to unintended disclosure of file content"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. Hard links are specific to one filesystem and cannot point to files on another filesystem"
+          "B. ethernet"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. If users other than root should be able to create hard links, suln has to be installed and configured"
+          "C. wifi"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. ipv6"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. When a hard linked file is changed, a copy of the file is created and consumes additional space"
+          "E. bridge"
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "BCE",
+    "qinfo": []
+  },
+  {
+    "qid": 8,
+    "qtyp": "sc",
+    "qtxt": [
+      "On a Linux workstation, the route command takes a long time before printing out the routing table.",
+      "Which of the following errors does that indicate?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. The local routing information may be corrupted and must be re-validated using a routing protocol."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. One of the routers in the routing table is not available which causes the automatic router failure detection mechanism (ARF-D) to wait for a timeout."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. There may accidentally be more than one default router in which case a default router election has to be done on the network in order to choose one router as the default."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. The Linux Kernel Routing Daemon (LKRD) is not running and should be started using its init script or systemd unit."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. DNS resolution may not be working as route by default tries to resolve names of routers and destinations and may run into a timeout."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
+    "qinfo": []
+  },
+  {
+    "qid": 9,
+    "qtyp": "sc",
+    "qtxt": [
+      "What is true about the Hop Limit field in the IPv6 header?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. The field is not changed during the transport of a package."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. The field is transmitted within a hop-by-hop extension header."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. Each router forwarding the packet increases the field's value."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. Each router forwarding the packet decreases the field's value."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. For multicast packages, the field's value is always 1."
         ],
         "correct": false
       }
     ],
-    "qcorrect": "C",
+    "qcorrect": "D",
+    "qinfo": []
+  },
+  {
+    "qid": 10,
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following nmcli subcommands exist? (Choose two.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. nmcli ethernet"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. nmcli device"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "C. nmcli wifi"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. nmcli address"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. nmcli connection"
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "BE",
+    "qinfo": []
+  },
+  {
+    "qid": 11,
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following changes may occur as a consequence of using the command ip? (Choose",
+      "three.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. Network interfaces may become active or inactive."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. New name servers may be added to the resolver configuration."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. The system's host name may change."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. IP addresses may change."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. The routing table may change."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "ADE",
+    "qinfo": []
+  },
+  {
+    "qid": 12,
+    "qtyp": "sc",
+    "qtxt": [
+      "How many IP addresses can be used for unique hosts inside the IPv4 subnet 192.168.2.128/26?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. 33"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. 14"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. 30"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. 62"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. 126"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "D",
+    "qinfo": []
+  },
+  {
+    "qid": 13,
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following IPv4 networks are reserved by IANA for private address assignment and private",
+      "routing? (Choose three.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. 10.0.0.0/8"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. 127.0.0.0/8"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. 169.255.0.0/16"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. 172.16.0.0/12"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. 192.168.0.0/16"
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "ADE",
     "qinfo": []
   },
   {
     "qid": 14,
-    "qtyp": "sc",
-    "qtxt": [],
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following commands configure network interfaces based on the system's existing",
+      "distribution-specific configuration files? (Choose two.)"
+    ],
     "qanswers": [
       {
         "txt": [
-          "In compliance with the FHS, in which of the directories are man pages found?"
+          "A. ifconf"
         ],
         "correct": false
       },
       {
         "txt": [
-          "A. /opt/man/"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. /usr/doc/"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. /usr/share/man/"
+          "B. ifdown"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. /var/pkg/man"
+          "C. ifpause"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. /var/man/"
+          "D. ifstart"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. ifup"
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "BE",
+    "qinfo": []
+  },
+  {
+    "qid": 15,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following statements is true if the UID of a regular user is identical to the GID of a group?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. UID have precedence over GIDs, therefore the user is available while the group doesn't."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. The user as well as the group are not available to avoid ambiguity due to the ID conflict."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. UIDs and GIDs are independent of each other, therefore the user as well as the group are still available."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. The user is the only member of the group, even if the group configuration contains other members."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. GIDs have precedence over UIDs, therefore the group is available while the user isn't."
         ],
         "correct": false
       }
     ],
     "qcorrect": "C",
-    "qinfo": []
-  },
-  {
-    "qid": 15,
-    "qtyp": "fi",
-    "qtxt": [
-      "Which file in the /proc filesystem lists parameters passed from the bootloader to the kernel? (Specify the",
-      "file name only without any path.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "cmdline"
-        ]
-      }
-    ],
     "qinfo": []
   },
   {
     "qid": 16,
     "qtyp": "sc",
     "qtxt": [
-      "What is the process ID number of the init process on a System V init based system?"
+      "Which of the following information is stored in /etc/shadow for each user?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. -1"
+          "A. The timestamp of the user's last login"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. 0"
+          "B. The user's private SSH keys"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. 1"
+          "C. The hashed password of the user"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. It is different with each reboot"
+          "D. The numerical user ID (UID)"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. It is set to the current run level"
+          "E. The path to the user's home directory"
         ],
         "correct": false
       }
@@ -595,162 +590,36 @@
     "qid": 17,
     "qtyp": "sc",
     "qtxt": [
-      "Which daemon handles power management events on a Linux system?"
+      "Which of the following commands shows all active systemd timers?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. acpid"
+          "A. systemctl-timer show"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. timectl list"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. systemctl -t"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. systemctl list-timers"
         ],
         "correct": true
       },
       {
         "txt": [
-          "B. batteryd"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. pwrmgntd"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. psd"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. inetd"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "A",
-    "qinfo": []
-  },
-  {
-    "qid": 18,
-    "qtyp": "mc",
-    "qtxt": [
-      "Which of the following statements are true about the boot sequence of a PC using a BIOS? (Choose",
-      "two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. Some parts of the boot process can be configured from the BIOS"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. Linux does not require the assistance of the BIOS to boot a computer"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. The BIOS boot process starts only if secondary storage, such as the hard disk, is functional"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. The BIOS initiates the boot process after turning the computer on"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. The BIOS is started by loading hardware drivers from secondary storage, such as the hard disk"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "AD",
-    "qinfo": []
-  },
-  {
-    "qid": 19,
-    "qtyp": "mc",
-    "qtxt": [
-      "What is true regarding UEFI firmware? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. It can read and interpret partition tables"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. It can use and read certain file systems"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. It stores its entire configuration on the /boot/ partition"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. It is stored in a special area within the GPT metadata"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. It is loaded from a fixed boot disk position"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "BD",
-    "qinfo": []
-  },
-  {
-    "qid": 20,
-    "qtyp": "sc",
-    "qtxt": [
-      "A faulty kernel module is causing issues with a network interface card.",
-      "Which of the following actions ensures that this module is not loaded automatically when the system",
-      "boots?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. Using lsmod --remove --autocleanwithout specifying the name of a specific module"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. Using modinfo -kfollowed by the name of the offending module"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. Using modprobe -rfollowed by the name of the offending module"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. Adding a blacklist line including the name of the offending module to the file /etc/modprobe.d/blacklist.conf"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. Deleting the kernel module’s directory from the file system and recompiling the kernel, including its modules"
+          "E. timeq"
         ],
         "correct": false
       }
@@ -759,39 +628,39 @@
     "qinfo": []
   },
   {
-    "qid": 21,
+    "qid": 18,
     "qtyp": "mc",
     "qtxt": [
-      "When is the content of the kernel ring buffer reset? (Choose two.)"
+      "Which of the following tasks can the date command accomplish? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. When the ring buffer is explicitly reset using the command dmesg --clear"
+          "A. Set the system's date and time."
         ],
         "correct": true
       },
       {
         "txt": [
-          "B. When the ring buffer is read using dmesg without any additional parameters"
+          "B. Set the system's date but not the time."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. When a configurable amount of time, 15 minutes by default, has passed"
+          "C. Calculate the time span between two dates."
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. When the kernel loads a previously unloaded kernel module"
+          "D. Print a calendar for a month or a year."
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. When the system is shut down or rebooted"
+          "E. Display time in a specific format."
         ],
         "correct": true
       }
@@ -800,122 +669,221 @@
     "qinfo": []
   },
   {
-    "qid": 22,
-    "qtyp": "sc",
+    "qid": 19,
+    "qtyp": "fi",
     "qtxt": [
-      "What is the first program the Linux kernel starts at boot time when using System V init?"
+      "Which file, if present, must contain all users that are allowed to use the cron scheduling system? (Specify",
+      "the full name of the file, including path.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. /lib/init.so"
+          "/etc/cron.allow"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 20,
+    "qtyp": "mc",
+    "qtxt": [
+      "What can be specified with useradd? (Choose two.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. Commands the user can run using sudo."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. /proc/sys/kernel/init"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. /etc/rc.d/rcinit"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. /sbin/init"
+          "B. The absolute path to the user's home directory."
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. /boot/init"
+          "C. Which printers are available for the new user."
         ],
         "correct": false
+      },
+      {
+        "txt": [
+          "D. The SSH keys used to login to the new account."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. The numeric user ID (UID) of the user."
+        ],
+        "correct": true
       }
     ],
-    "qcorrect": "D",
+    "qcorrect": "BE",
+    "qinfo": []
+  },
+  {
+    "qid": 21,
+    "qtyp": "sc",
+    "qtxt": [
+      "What is true about the file /etc/localtime?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. It is a plain text file containing a string such as Europe/Berlin"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. It is created and maintained by the NTP service based on the location of the system's IP address."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. It is a symlink to /sys/device/clock/ltime and always contains the current local time."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. After changing this file, newtzconfighas to be run to make the changes effective."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. It is either a symlink to or a copy of a timezone information file such as /usr/share/zoneinfo/Europe/Berlin."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
+    "qinfo": []
+  },
+  {
+    "qid": 22,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following statements is true regarding systemd timer units?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. Timer units can only be defined within a service unit's file."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. The command executed by the timer is specified in the timer unit's [Cmd] section."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. A dedicated system service, systemd-cron, handles the execution of timer units."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. Timer units only exist in the system scope and are not available for users."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. Each systemd timer unit controls a specific systemd service unit."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
     "qinfo": []
   },
   {
     "qid": 23,
-    "qtyp": "sc",
+    "qtyp": "mc",
     "qtxt": [
-      "A Debian package creates several files during its installation.",
-      "Which of the following commands searches for packages owning the file /etc/debian_version?"
+      "Which of the following fields are available in the standard format of both the global /etc/crontab file as",
+      "well as in user-specific crontab files? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. apt-get search /etc/debian_version"
+          "A. Year"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. apt -r /etc/debian_version"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. find /etc/debian_version -dpkg"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. dpkg -S  /etc/debian_version"
+          "B. Minute"
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. apt-file /etc/debian_version"
+          "C. Username"
         ],
         "correct": false
+      },
+      {
+        "txt": [
+          "D. Effective group ID"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. Command"
+        ],
+        "correct": true
       }
     ],
-    "qcorrect": "D",
+    "qcorrect": "BE",
     "qinfo": []
   },
   {
     "qid": 24,
     "qtyp": "sc",
     "qtxt": [
-      "What is contained on the EFI System Partition?"
+      "Which of the following commands should be executed when starting a login shell in order to change",
+      "the language of messages for an internationalized program to Portuguese (pt)?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. The Linux root file system"
+          "A. export LANGUAGE=“pt\""
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. The first stage boot loader"
+          "B. export LC_MESSAGES=“pt\""
         ],
         "correct": true
       },
       {
         "txt": [
-          "C. The default swap space file"
+          "C. export UI_MESSAGES=“pt\""
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. The Linux default shell binaries"
+          "D. export MESSAGE=“pt\""
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. The user home directories"
+          "E. export ALL_MESSAGES=“pt\""
         ],
         "correct": false
       }
@@ -925,246 +893,79 @@
   },
   {
     "qid": 25,
-    "qtyp": "mc",
+    "qtyp": "sc",
     "qtxt": [
-      "Which of the following directories on a 64 bit Linux system typically contain shared libraries? (Choose",
-      "two.)"
+      "Which of the following files assigns a user to its primary group?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. ~/.lib64/"
+          "A. /etc/pgroup"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. /usr/lib64/"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. /var/lib64/"
+          "B. /etc/shadow"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. /lib64/"
+          "C. /etc/passwd"
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. /opt/lib64/"
+          "D. /etc/group"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. /etc/gshadow"
         ],
         "correct": false
       }
     ],
-    "qcorrect": "BD",
+    "qcorrect": "C",
     "qinfo": []
   },
   {
     "qid": 26,
-    "qtyp": "mc",
-    "qtxt": [
-      "Which of the following files exist in a standard GRUB 2 installation? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. /boot/grub/stages/stage0"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. /boot/grub/i386-pc/lvm.mod"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. /boot/grub/fstab"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. /boot/grub/grub.cfg"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. /boot/grub/linux/vmlinuz"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "BD",
-    "qinfo": []
-  },
-  {
-    "qid": 27,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands installs all packages with a name ending with the string foo?"
+      "Which of the following steps prevents a user from obtaining an interactive login session?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. zypper get \"*foo\""
+          "A. Setting the UID for the user to 0."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. zypper update \"foo?\""
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. zypper force \"foo*\""
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. zypper install \"*foo\""
+          "B. Running the command chsh -s /bin/false with the user name."
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. zypper add \".*foo\""
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "D",
-    "qinfo": []
-  },
-  {
-    "qid": 28,
-    "qtyp": "mc",
-    "qtxt": [
-      "Which of the following properties of a Linux system should be changed when a virtual machine is",
-      "cloned? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. The partitioning scheme"
+          "C. Removing the user from the group staff."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. The file system"
+          "D. Adding the user to /etc/noaccess."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. The D-Bus Machine ID"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. The permissions of /root/"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. The SSH host keys"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "CE",
-    "qinfo": []
-  },
-  {
-    "qid": 29,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following commands installs GRUB 2 into the master boot record on the third hard disk?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. grub2 install /dev/sdc"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. grub-mkrescue /dev/sdc"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. grub-mbrinstall /dev/sdc"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. grub-setup /dev/sdc"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. grub-install /dev/sdc"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "E",
-    "qinfo": []
-  },
-  {
-    "qid": 30,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following partition types is used for Linux swap spaces when partitioning hard disk",
-      "drives?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. 7"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. 82"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. 83"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. 8e"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. fd"
+          "E. Creating a .nologin file in the user's home directory."
         ],
         "correct": false
       }
@@ -1173,39 +974,450 @@
     "qinfo": []
   },
   {
-    "qid": 31,
-    "qtyp": "mc",
+    "qid": 27,
+    "qtyp": "fi",
     "qtxt": [
-      "What is true regarding the configuration of yum? (Choose two.)"
+      "Which command included in systemd supports selecting messages from the systemd journal by criteria",
+      "such as time or unit name? (Specify only the command without any path or parameters.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. Changes to the repository configuration become active after running yum confupdate"
+          "journalctl"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 28,
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following statements about systemd-journald are true? (Choose three.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. It is incompatible with syslog and cannot be installed on a system using regular syslog."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. Changes to the yum configuration become active after restarting the yumd service"
+          "B. It only processes messages of systemd and not messages of any other tools."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. The configuration of package repositories can be divided into multiple files"
+          "C. It can pass log messages to syslog for further processing."
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. Repository configurations can include variables such as $basearch or $releasever"
+          "D. It maintains metadata such as _UID or _PID for each message."
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. In case /etc/yum.repos.d/contains files, /etc/yum.confis ignored"
+          "E. It supports syslog facilities such as kern, user, and auth."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "CDE",
+    "qinfo": []
+  },
+  {
+    "qid": 29,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which command must be run after adding a new email alias to the configuration in order to make this",
+      "change effective? (Specify the command without any path but including all required parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "newaliases"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 30,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which option in the chrony configuration file changes the initial interval of polls to a NTP server in order",
+      "to speed up the initial synchronization?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. iburst"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. quickstart"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. fast"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. fsync"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. flood"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "A",
+    "qinfo": []
+  },
+  {
+    "qid": 31,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following commands is used to rotate, compress, and mail system logs?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. logrotate"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. striplog"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. syslogd --rotate"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. rotatelog"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. logger"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "A",
+    "qinfo": []
+  },
+  {
+    "qid": 32,
+    "qtyp": "sc",
+    "qtxt": [
+      "Why is the correct configuration of a system's time zone important?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. Because the timezone is included in checksum calculations and timezone changes invalidate existing checksums."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. Because the time zone is saved as part of the modification times of files and cannot be changed after a file is created."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. Because the environment variables LANG and LC_MESSAGES are, by default, set according to the time zone."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. Because NTP chooses servers nearby based on the configured time zone."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. Because the conversion of Unix timestamps to local time relies on the time zone configuration."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
+    "qinfo": []
+  },
+  {
+    "qid": 33,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which command, available with all sendmail-compatible MTAs, is used to list the contents of the MTA's",
+      "mail queue? (Specify only the command without any path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "mailq"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 34,
+    "qtyp": "fi",
+    "qtxt": [
+      "What is the top-level directory which contains the configuration files for CUPS? (Specify the full path to",
+      "the directory.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "/etc/cups"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 35,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following commands lists all queued print jobs?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. lpd"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. lpr"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. lp"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. lsq"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. lpq"
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
+    "qinfo": []
+  },
+  {
+    "qid": 36,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following entries in /etc/syslog.conf writes all mail related events to the file /var/log/maillog",
+      "and sends all critical events to the remote server logger.example.com?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. mail.* /var/log/maillog \\n mail,crit @logger.example.org"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. mail.* /var/log/maillog \\n mail.crit syslog://logger.example.org"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. mail /var/log/maillog \\n mail.crit @logger.example.org"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. mail.* /var/log/maillog \\n mail.crit @logger.example.org"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. mail * /var/log/maillog \\n mail crit @logger.example.org"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "D",
+    "qinfo": []
+  },
+  {
+    "qid": 37,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which option in the /etc/ntp.conf file specifies an external NTP source to be queried for time information?",
+      "(Specify only the option without any values or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "server"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 38,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following protocols is related to the term open relay?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. SMTP"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. POP3"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. NTP"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. IMAP"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. LDAP"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "A",
+    "qinfo": []
+  },
+  {
+    "qid": 39,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following commands displays all environment and shell variables?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. getargs"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. lsenv"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. ls"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. env"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. lsshell"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "D",
+    "qinfo": []
+  },
+  {
+    "qid": 40,
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following comparison operators for test work on elements in the file system? (Choose",
+      "two.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. -z"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. -eq"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. -d"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. -f"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. -lt"
         ],
         "correct": false
       }
@@ -1214,606 +1426,80 @@
     "qinfo": []
   },
   {
-    "qid": 32,
+    "qid": 41,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following apt-get subcommands installs the newest versions of all currently installed",
-      "packages?"
+      "What information is provided by the echo $$ command?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. auto-update"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. dist-upgrade"
+          "A. The process ID of the current shell."
         ],
         "correct": true
       },
       {
         "txt": [
-          "C. full-upgrade"
+          "B. The process ID for the following command."
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. install"
+          "C. The process ID of the last command executed."
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. update"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "B",
-    "qinfo": []
-  },
-  {
-    "qid": 33,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which command uninstalls a package but keeps its configuration files in case the package is",
-      "re-installed?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. dpkg -s pkgname"
+          "D. The process ID of the last command which has been placed in the background."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. dpkg -L pkgname"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. dpkg -P pkgname"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. dpkg -v pkgname"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. dpkg -r pkgname"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "E",
-    "qinfo": []
-  },
-  {
-    "qid": 34,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following commands lists the dependencies of the RPM package file foo.rpm?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. rpm -qpR foo.rpm"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. rpm -dep foo"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. rpm -ld foo.rpm"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. rpm -R foo.rpm"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. rpm -pD foo"
+          "E. The process ID of the echo command."
         ],
         "correct": false
       }
     ],
     "qcorrect": "A",
-    "qinfo": []
-  },
-  {
-    "qid": 35,
-    "qtyp": "sc",
-    "qtxt": [
-      "What is the maximum niceness value that a regular user can assign to a process with the nice",
-      "command when executing a new process?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. 9"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. 15"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. 19"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. 49"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. 99"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "C",
-    "qinfo": []
-  },
-  {
-    "qid": 36,
-    "qtyp": "mc",
-    "qtxt": [
-      "Which of the following commands list all files and directories within the /tmp/ directory and its",
-      "subdirectories which are owned by the user root? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. find /tmp -user root -print"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. find -path /tmp -uid root"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. find /tmp -uid root -print"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. find /tmp -user root"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. find -path /tmp -user root -print"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "AD",
-    "qinfo": []
-  },
-  {
-    "qid": 37,
-    "qtyp": "mc",
-    "qtxt": [
-      "Which of the following are valid stream redirection operators within Bash? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. <"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. #>"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. %>"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. >>>"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. 2>&1"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "AE",
-    "qinfo": []
-  },
-  {
-    "qid": 38,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following vi commands deletes two lines, the current and the following line?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. d2"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. 2d"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. 2dd"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. dd2"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. de12"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "C",
-    "qinfo": []
-  },
-  {
-    "qid": 39,
-    "qtyp": "sc",
-    "qtxt": [
-      "The command dbmaint & was used to run dbmaint in the background.",
-      "However, dbmaint is terminated after logging out of the system.",
-      "Which alternative dbmaint invocation lets dbmaint continue to run even when the user running the",
-      "program logs out?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. job -b dmaint"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. dbmaint &>/dev/pts/null"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. nohup dbmaint &"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. bg dbmaint"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. wait dbmaint"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "C",
-    "qinfo": []
-  },
-  {
-    "qid": 40,
-    "qtyp": "mc",
-    "qtxt": [
-      "From a Bash shell, which of the following commands directly execute the instructions from the file",
-      "/usr/local/bin/runme.shi without starting a subshell? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. source /usr/local/bin/runme.sh"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. /usr/local/bin/runme.sh"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. /bin/bash /usr/local/bin/runme.sh"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. . /usr/local/bin/runme.sh"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. run /usr/local/bin/runme.sh"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "AD",
-    "qinfo": []
-  },
-  {
-    "qid": 41,
-    "qtyp": "fi",
-    "qtxt": [
-      "Which program runs a command in specific intervals and refreshes the display of the program’s output?",
-      "(Specify ONLY the command without any path or parameters.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "watch"
-        ]
-      }
-    ],
     "qinfo": []
   },
   {
     "qid": 42,
     "qtyp": "sc",
     "qtxt": [
-      "Immediately after deleting 3 lines of text in vi and moving the cursor to a different line, which single",
-      "character command will insert the deleted content below the current line?"
+      "Which command makes the shell variable named VARIABLE visible to subshells?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. i (lowercase)"
+          "A. export $VARIABLE"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. p (lowercase)"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. P (uppercase)"
+          "B. env VARIABLE"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. U (uppercase)"
+          "C. set $VARIABLE"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. u (lowercase)"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "B",
-    "qinfo": []
-  },
-  {
-    "qid": 43,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following commands changes all CR-LF line breaks in the text file userlist.txt to Linux",
-      "standard LF line breaks and stores the result in newlist.txt?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. tr -d '\\r' < userlist.txt > newlist.txt"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. tr -c '\\n\\r' '' <newlist.txt> userlist.txt"
+          "D. set VARIABLE"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. tr '\\r\\n' '' <userlist.txt> newlist.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. tr '\\r' '\\n' userlist.txt newlist.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. tr -s '/^M/^J/' userlist.txt newlist.txt"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "A",
-    "qinfo": []
-  },
-  {
-    "qid": 44,
-    "qtyp": "sc",
-    "qtxt": [
-      "Given the following input stream:",
-      " txt1.txt ",
-      " atxt.txt ",
-      " txtB.txt",
-      "Which of the following regular expressions turns this input stream into the following output stream?",
-      " txt1.bak.txt ",
-      " atxt.bak.txt ",
-      " txtB.bak.txt"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. s/^.txt/.bak/"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. s/txt/bak.txt/"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. s/txt$/bak.txt/"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. s/^txt$/.bak^/"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. s/[.txt]/.bak$1/"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "C",
-    "qinfo": []
-  },
-  {
-    "qid": 45,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which command must be entered before exiting vi to save the current file as filea.txt?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. %s filea.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. %w filea.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. :save filea.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. :w filea.txt"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. :s filea.txt"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "D",
-    "qinfo": []
-  },
-  {
-    "qid": 46,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following signals is sent to a process when the key combination Ctrl+C is pressed on the",
-      "keyboard?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. SIGTERM"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. SIGCONT"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. SIGSTOP"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. SIGKILL"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. SIGINT"
+          "E. export VARIABLE"
         ],
         "correct": true
       }
@@ -1822,40 +1508,181 @@
     "qinfo": []
   },
   {
-    "qid": 47,
+    "qid": 43,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands displays the output of the foo command on the screen and also",
-      "writes it to a file called /tmp/foodata?"
+      "What output is produced by the following command sequence?",
+      "  echo '1 2 3 4 5 6' | while read a b c; do",
+      "    echo result: $c $b $a; done"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. foo | less /tmp/foodata"
+          "A. result: 6 5 4"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. foo | cp /tmp/foodata"
+          "B. result: 1 2 3 4 5 6"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. foo > /tmp/foodata"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. foo | tee /tmp/foodata"
+          "C. result: 3 4 5 6 2 1"
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. foo > stdout >> /tmp/foodata"
+          "D. result: 6 5 4 3 2 1"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. result: 3 2 1"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "C",
+    "qinfo": []
+  },
+  {
+    "qid": 44,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following configuration files should be modified to globally set shell variables for all",
+      "users?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. /etc/profile"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. /etc/bashrc"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. ~/.bash_profile"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. /etc/.bashrc"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. /etc/shellenv"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "A",
+    "qinfo": []
+  },
+  {
+    "qid": 45,
+    "qtyp": "sc",
+    "qtxt": [
+      "What output does the command seq 10 produce?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. A continuous stream of numbers increasing in increments of 10 until the command is stopped."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. It creates no output because a second parameter is missing."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. The number 0 through 9 with one number per line."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. The number 10 to standard output."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. The numbers 1 through 10 with one number per line."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
+    "qinfo": []
+  },
+  {
+    "qid": 46,
+    "qtyp": "fi",
+    "qtxt": [
+      "What command list the aliases defined in the current Bash shell? (Specify only the command without any",
+      "path or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "alias"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 47,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following commands can be used to limit the amount of memory a user may use?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. umask"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. usermod"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. passwd"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. ulimit"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. chage"
         ],
         "correct": false
       }
@@ -1867,79 +1694,77 @@
     "qid": 48,
     "qtyp": "sc",
     "qtxt": [
-      "What output will be displayed when the user fred executes the following command?",
-      "  echo 'fred $USER’"
+      "What is a purpose of an SSH host key?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. fred fred"
+          "A. It must be sent by any SSH client in addition to a user key in order to identify the client's host."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. fred /home/fred/"
+          "B. It is root key by which all user SSH keys must be signed."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. 'fred $USER’"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. fred $USER"
+          "C. It provides the server's identity information to connecting SSH clients."
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. 'fred fred’"
+          "D. It authenticates any user that logs into a remote machine from the key's host."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. It is used by system services like cron, syslog or a backup job to automatically connect to remote hosts."
         ],
         "correct": false
       }
     ],
-    "qcorrect": "D",
+    "qcorrect": "C",
     "qinfo": []
   },
   {
     "qid": 49,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands displays the path to the executable file that would be executed when",
-      "the command foo is invoked?"
+      "What is the purpose of TCP wrapper?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. lsattr foo"
+          "A. Manage and adjust bandwidth used by TCP services."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. apropos foo"
+          "B. Bind a network service to a TCP port."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. locate foo"
+          "C. Encapsulate TCP messages in IP packets."
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. whatis foo"
+          "D. Add SSL support to plain text TCP services."
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. which foo"
+          "E. Limit access to a network service."
         ],
         "correct": true
       }
@@ -1949,124 +1774,123 @@
   },
   {
     "qid": 50,
-    "qtyp": "sc",
+    "qtyp": "mc",
     "qtxt": [
-      "When redirecting the output of find to the xargs command, what option to find is useful if the filenames",
-      "contain spaces?"
+      "Given the following excerpt of the sudo configuration:",
+      "  Jane ANY=NOPASSWD: /bin/kill, /bin/id, PASSWD: /sbin/fdisk",
+      "Which of the following statements are true? (Choose three.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. -rep-space"
+          "A. Jane can run /bin/id only after specifying her password."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. -printnul"
+          "B. Jane can run /sbin/fdisk after specifying root's password."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. -nospace"
+          "C. Jane can run /sbin/fdisk after specifying her password."
         ],
-        "correct": false
+        "correct": true
       },
       {
         "txt": [
-          "D. -ignore-space"
+          "D. Jane can run /bin/kill without specifying a password."
         ],
-        "correct": false
+        "correct": true
       },
       {
         "txt": [
-          "E. -print0"
+          "E. Jane can run /bin/id without specifying her password."
         ],
         "correct": true
       }
     ],
-    "qcorrect": "E",
+    "qcorrect": "CDE",
     "qinfo": []
   },
   {
     "qid": 51,
-    "qtyp": "mc",
+    "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands can be used to determine how long the system has been running?",
-      "(Choose two.)"
+      "Which configuration file contains the default options for SSH clients?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. uptime"
+          "A. /etc/ssh/sshd_config"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. /etc/ssh/ssh"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. /etc/ssh/ssh_config"
         ],
         "correct": true
       },
       {
         "txt": [
-          "B. up"
+          "D. /etc/ssh/client"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. time --up"
+          "E. /etc/ssh/ssh_client"
         ],
         "correct": false
-      },
-      {
-        "txt": [
-          "D. uname -u"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. top"
-        ],
-        "correct": true
       }
     ],
-    "qcorrect": "AE",
+    "qcorrect": "C",
     "qinfo": []
   },
   {
     "qid": 52,
     "qtyp": "sc",
     "qtxt": [
-      "What is true regarding the command",
-      "  ls > files ",
-      "if files does not exist?"
+      "Depending on a system's configuration, which of the following files can be used to enable and disable",
+      "network services running on this host?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. The output of ls is printed to the terminal"
+          "A. /etc/profile"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. files is created and contains the output of ls"
+          "B. /etc/xinetd.conf"
         ],
         "correct": true
       },
       {
         "txt": [
-          "C. An error message is shown and ls is not executed"
+          "C. /etc/ports"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. The command files is executed and receives the output of ls"
+          "D. /etc/services"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. Any output of ls is discarded"
+          "E. /etc/host.conf"
         ],
         "correct": false
       }
@@ -2078,36 +1902,36 @@
     "qid": 53,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following files, located in a user’s home directory, contains the Bash history?"
+      "Which of the following commands can identify the PID or a process which opened a TCP port?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. .bashrc_history"
+          "A. ptrace"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. .bash_histfile"
+          "B. strace"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. .history"
+          "C. debug"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. .bash_history"
+          "D. lsof"
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. .history_bash"
+          "E. nessus"
         ],
         "correct": false
       }
@@ -2117,123 +1941,72 @@
   },
   {
     "qid": 54,
-    "qtyp": "mc",
+    "qtyp": "fi",
     "qtxt": [
-      "Which wildcards will match the following filenames? (Choose two.)",
-      " ttyS0",
-      " ttyS1",
-      " ttyS2"
+      "When using X11 forwarding in SSH, what environment variable is automatically set in the remote shell in",
+      "order to help applications to connect to the correct X11 server? (Specify only the environment variable",
+      "without any additional commands or values.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. ttyS[1-5]"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. tty?[0-5]"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. tty*2"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. tty[A-Z][012]"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. tty[Ss][02]"
-        ],
-        "correct": false
+          "DISPLAY"
+        ]
       }
     ],
-    "qcorrect": "BD",
     "qinfo": []
   },
   {
     "qid": 55,
-    "qtyp": "sc",
+    "qtyp": "fi",
     "qtxt": [
-      "Which of the following commands redirects the output of ls to standard error?"
+      "The presence of what file will temporarily prevent all users except root from logging into a system?",
+      "(Specify the full name of the file, including path.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. ls >-1"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. ls <<ERR"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. ls >&2"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. ls >>2"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. ls |error"
-        ],
-        "correct": false
+          "/etc/nologin"
+        ]
       }
     ],
-    "qcorrect": "C",
     "qinfo": []
   },
   {
     "qid": 56,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands displays the contents of a gzip compressed tar archive?"
+      "Which of the following commands preloads and manages existing SSH keys that are used for",
+      "automatic authentication while logging in to other machines using SSH?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. gzip archive.tgz | tar xvf"
+          "A. sshd"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. tar -fzt archive.tgz"
+          "B. ssh-keyring"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. gzip -d archive.tgz | tar tvf"
+          "C. ssh-keygen"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. tar cf archive.tgz"
+          "D. ssh-pki"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. tar ztf archive.tgz"
+          "E. ssh-agent"
         ],
         "correct": true
       }
@@ -2245,37 +2018,37 @@
     "qid": 57,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands prints a list of usernames (first column) and their primary group",
-      "(fourth column) from the /etc/passwd file?"
+      "On a machine running several X servers, how do programs identify the different instances of the X11",
+      "server?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. fmt -f 1,4 /etc/passwd"
+          "A. By a fixed UUID that is defined in the X11 configuration file."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. cut -d : -f 1,4 /etc/passwd"
+          "B. By a display name like :1 ."
         ],
         "correct": true
       },
       {
         "txt": [
-          "C. sort -t : -k 1,4 /etc/passwd"
+          "C. By the name of the user that runs the X server like x11: bob."
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. paste -f 1,4 /etc/passwd"
+          "D. By a device name like /dev/X11/xservers/1."
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. split -c 1,4 /etc/passwd"
+          "E. By a unique IPv6 address from the fe80::/64subnet."
         ],
         "correct": false
       }
@@ -2287,94 +2060,36 @@
     "qid": 58,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following regular expressions represents a single upper-case letter?"
+      "What is the purpose of a screen reader?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. :UPPER:"
+          "A. It manages virtual keyboards on touch screen displays."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. [A-Z]"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. !a-z"
+          "B. It reads the parameters of the attached monitors and creates an appropriate X11 configuration."
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. %C"
+          "C. It displays lines and markers to help people use speed reading techniques."
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. {AZ}"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "B",
-    "qinfo": []
-  },
-  {
-    "qid": 59,
-    "qtyp": "fi",
-    "qtxt": [
-      "Which command is used to start another command with a given nice level? (Specify ONLY the command",
-      "without any path or parameters.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "nice"
-        ]
-      }
-    ],
-    "qinfo": []
-  },
-  {
-    "qid": 60,
-    "qtyp": "sc",
-    "qtxt": [
-      "Given a log file loga.log with timestamps of the format DD/MM/YYYY:hh:mm:ss, which command filters",
-      "out all log entries in the time period between 8:00 am and 8:59 am?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. grep -E ':08:[09]+:[09]+’ loga.log"
+          "D. It manages and displays files that contain e-books."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. grep -E ':08:[00]+’ loga.log"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. grep -E loga.log ':08:[0-9]+:[0-9]+’"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. grep loga.log ':08:[0-9]:[0-9]’"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. grep -E ':08:[0-9]+:[0-9]+’ loga.log"
+          "E. It reads displayed text to accommodate the needs of blind or visually impaired people."
         ],
         "correct": true
       }
@@ -2383,82 +2098,40 @@
     "qinfo": []
   },
   {
-    "qid": 61,
-    "qtyp": "mc",
-    "qtxt": [
-      "Instead of supplying an explicit device in /etc/fstab for mounting, what other options may be used to",
-      "identify the intended partition? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. LABEL"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. ID"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. FIND"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. NAME"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. UUID"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "AE",
-    "qinfo": []
-  },
-  {
-    "qid": 62,
+    "qid": 59,
     "qtyp": "sc",
     "qtxt": [
-      "A yum repository can declare sets of related packages.",
-      "Which yum command installs all packages belonging to the group admintools?"
+      "The X11 configuration file xorg.conf is grouped into sections.",
+      "How is the content of the section SectionName represented?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. yum pkgsel --install admintools"
+          "A. It is placed in curly brackets as in Section SectionName {…}."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. yum install admintools/*"
+          "B. It is placed between the tags <Section name=“SectionName\"> and </Section>."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. yum groupinstall admintools"
+          "C. It is placed between a line containing Section “SectionName\" and a line containing EndSection."
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. yum taskinstall admintools"
+          "D. It is placed after the row [SectionName]."
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. yum collection install admintools"
+          "E. It is placed after an initial unindented Section “SectionName\" and must be indented by exactly one tab character."
         ],
         "correct": false
       }
@@ -2467,615 +2140,39 @@
     "qinfo": []
   },
   {
-    "qid": 63,
-    "qtyp": "fi",
-    "qtxt": [
-      "What directory contains configuration files for additional yum repositories? (Specify the full path to the",
-      "directory.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "/etc/yum.repos.d"
-        ]
-      }
-    ],
-    "qinfo": []
-  },
-  {
-    "qid": 64,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following commands installs the GRUB boot files into the currently active file systems and",
-      "the boot loader into the first partition of the first disk?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. grub-install /dev/sda"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. grub-install /dev/sda1"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. grub-install current /dev/sda0"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. grub-install /dev/sda0"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. grub-install current /dev/sda1"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "B",
-    "qinfo": []
-  },
-  {
-    "qid": 65,
+    "qid": 60,
     "qtyp": "mc",
     "qtxt": [
-      "Which of the following files are found in the /boot/ filesystem? (Choose two.)"
+      "Which of the following features are provided by SPICE? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. Linux kernel images"
+          "A. Connecting local USB devices to remote applications."
         ],
         "correct": true
       },
       {
         "txt": [
-          "B. Bash shell binaries"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. systemd target and service units"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. Initial ramdisk images"
+          "B. Accessing graphical applications on a remote host."
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. fsck binaries"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "AD",
-    "qinfo": []
-  },
-  {
-    "qid": 66,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which file defines the network locations from where the Debian package manager downloads software",
-      "packages?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. /etc/dpkg/dpkg.cfg"
+          "C. Replacing Xorg as local X11 server."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. /etc/apt/apt.conf.d"
+          "D. Downloading and locally installing applications from a remote machine."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. /etc/apt/apt.conf"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. /etc/dpkg/dselect.cfg"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. /etc/apt/sources.list"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "E",
-    "qinfo": []
-  },
-  {
-    "qid": 67,
-    "qtyp": "sc",
-    "qtxt": [
-      "When removing a package on a system using dpkg package management, which dpkg option ensures",
-      "configuration files are removed as well?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. --clean"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. --purge"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. --vacuum"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. --remove"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. --declare"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "B",
-    "qinfo": []
-  },
-  {
-    "qid": 68,
-    "qtyp": "mc",
-    "qtxt": [
-      "Which of the following statements are correct when comparing Linux containers with traditional virtual",
-      "machines (e.g. LXC vs. KVM)? (Choose three.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. Containers are a lightweight virtualization method where the kernel controls process isolation and resource management."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. Fully virtualized machines can run any operating system for a specific hardware architecture within the virtual machine."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. Containers are completely decoupled from the host system’s physical hardware and can only use emulated virtual hardware devices."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. The guest environment for fully virtualized machines is created by a hypervisor which provides virtual and emulated hardware devices."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. Containers on the same host can use different operating systems, as the container hypervisor creates separate kernel execution."
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "ABD",
-    "qinfo": []
-  },
-  {
-    "qid": 69,
-    "qtyp": "sc",
-    "qtxt": [
-      "The installation of a local Debian package failed due to unsatisfied dependencies.",
-      "Which of the following commands installs missing dependencies and completes the interrupted package",
-      "installation?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. dpkg --fix --all"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. apt-get autoinstall"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. dpkg-reconfigure --all"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. apt-get all"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. apt-get install -f"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "E",
-    "qinfo": []
-  },
-  {
-    "qid": 70,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following commands lists all currently installed packages when using RPM package",
-      "management?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. yum --query --all"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. yum --list --installed"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. rpm --query --list"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. rpm --list --installed"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. rpm --query --all"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "E",
-    "qinfo": []
-  },
-  {
-    "qid": 71,
-    "qtyp": "mc",
-    "qtxt": [
-      "Which of the following commands are valid in the GRUB 2 configuration file? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. menuentry"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. uefi"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. pxe-ifconfig"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. insmod"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. kpartx"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "AD",
-    "qinfo": []
-  },
-  {
-    "qid": 72,
-    "qtyp": "sc",
-    "qtxt": [
-      "What is the purpose of the ldd command?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. It lists which shared libraries a binary needs to run."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. It installs and updates installed shared libraries."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. It turns a dynamically linked binary into a static binary."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. It defines which version of a library should be used by default."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. It runs a binary with an alternate library search path."
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "A",
-    "qinfo": []
-  },
-  {
-    "qid": 73,
-    "qtyp": "mc",
-    "qtxt": [
-      "What can the Logical Volume Manager (LVM) be used for? (Choose three.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. To create snapshots."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. To dynamically change the size of logical volumes."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. To dynamically create or delete logical volumes."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. To create RAID 9 arrays."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. To encrypt logical volumes."
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "ABC",
-    "qinfo": []
-  },
-  {
-    "qid": 74,
-    "qtyp": "mc",
-    "qtxt": [
-      "What are the main differences between GPT and MBR partition tables regarding maximum number",
-      "and size of partitions? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. MBR can handle partition sizes up to 4 TB, whereas GPT supports partition sizes up to 128 ZB."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. By default, GPT can manage up to 128 partitions while MBR only supports four primary partitions."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. By default, GPT can manage up to 64 partitions while MBR only supports 16 primary partitions."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. MBR can handle partition sizes up to 2.2 TB, whereas GPT supports sizes up to 9.4 ZB."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. Both GPT and MBR support up to four primary partitions, each with up to 4096 TB."
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "BD",
-    "qinfo": []
-  },
-  {
-    "qid": 75,
-    "qtyp": "mc",
-    "qtxt": [
-      "A backup software heavily uses hard links between files which have not been changed in between two",
-      "backup runs.",
-      "Which benefits are realized due to these hard links? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. The old backups can be moved to slow backup media, such as tapes, while still serving as hard link target in new backups."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. The backup runs faster because hard links are asynchronous operations, postponing the copy operation to a later point in time."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. The backup is guaranteed to be uncharged because a hard linked file cannot be modified after its creation."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. The backup consumes less space because the hard links point to the same data on disk instead of storing redundant copies."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. The backup runs faster because, instead of copying the data of each file, hard links only change file system meta data."
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "DE",
-    "qinfo": []
-  },
-  {
-    "qid": 76,
-    "qtyp": "fi",
-    "qtxt": [
-      "Which file from the /proc/ filesystem contains a list of all currently mounted devices? (Specify the full",
-      "name of the file, including path.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "/proc/mounts"
-        ]
-      }
-    ],
-    "qinfo": []
-  },
-  {
-    "qid": 77,
-    "qtyp": "sc",
-    "qtxt": [
-      "How many fields are in a syntactically correct line of /etc/fstab?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. 3"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. 4"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. 5"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. 6"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. 7"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "D",
-    "qinfo": []
-  },
-  {
-    "qid": 78,
-    "qtyp": "mc",
-    "qtxt": [
-      "Running chmod 640 filea.txt as a regular user doesn’t update filea.txt’s permission.",
-      "What might be a reason why chmod cannot modify the permissions? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. filea.txt is owned by another user and a regular user cannot change the permissions of another user’s file."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. filea.txt is a symbolic link whose permissions are a fixed value which cannot be changed."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. filea.txt has the sticky bit set and a regular user cannot remove this permission."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. filea.txt is a hard link whose permissions are inherited from the target and cannot be set directly."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. filea.txt has the SetUID bit set which imposes the restriction that only the root user can make changes to the file."
+          "E. Uploading and running a binary program on a remote machine."
         ],
         "correct": false
       }
@@ -3084,81 +2181,260 @@
     "qinfo": []
   },
   {
-    "qid": 79,
-    "qtyp": "mc",
+    "qid": 61,
+    "qtyp": "sc",
     "qtxt": [
-      "Which of the following Linux filesystems preallocate a fixed number of inodes when creating a new",
-      "filesystem instead of generating them as needed? (Choose two.)"
+      "Where is the systemd journal stored?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. JFS"
+          "A. /var/jlog/and /var/jlogd/"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. ext3"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. XFS"
+          "B. /proc/log/and /proc/klog/"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. ext2"
+          "C. /run/log/journal/ or /var/log/journal/"
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. procfs"
+          "D. /var/log/syslog.binor /var/log/syslog.jrn"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. /etc/systemd/journal/or /usr/lib/systemd/journal/"
         ],
         "correct": false
       }
     ],
-    "qcorrect": "BD",
+    "qcorrect": "C",
     "qinfo": []
   },
   {
-    "qid": 80,
+    "qid": 62,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands sets the SetUID permission on the executable /bin/foo?"
+      "Which of the following is true regarding the command sendmail?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. chmod 4755 /bin/foo"
+          "A. With any MTA, the sendmail command must be run periodically by the cron daemon."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. When using systemd, sendmail is an alias to relayctl."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. The sendmail command prints the MTA's queue history of which mails have been sent successfully."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. It is only available when the sendmail MTA is installed."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. All common MTAs, including Postfix and Exim, provide a sendmail command."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
+    "qinfo": []
+  },
+  {
+    "qid": 63,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which file inside the CUPS configuration directory contains the settings of the printers?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. cups-devices.conf"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. snmp.conf"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. printers.conf"
         ],
         "correct": true
       },
       {
         "txt": [
-          "B. chmod 1755 /bin/foo"
+          "D. printcap.conf"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. chmod u-s /bin/foo"
+          "E. cupsd.conf"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "C",
+    "qinfo": []
+  },
+  {
+    "qid": 64,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which file is processed by newaliases? (Specify the full name of the file, including path.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "/etc/aliases"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 65,
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following are syslog facilities? (Choose two.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. local5"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. accounting"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. chmod 755+s /bin/foo"
+          "C. mail"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. postmaster"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. chmod 2755 /bin/foo"
+          "E. remote"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "AC",
+    "qinfo": []
+  },
+  {
+    "qid": 66,
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following parameters are used for journalctl to limit the time frame of the output? (Choose",
+      "two.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. --since="
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. --from="
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. --until="
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. --upto="
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. --date="
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "AC",
+    "qinfo": []
+  },
+  {
+    "qid": 67,
+    "qtyp": "sc",
+    "qtxt": [
+      "What is true regarding the file ~/.forward?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. When configured correctly ~/.forward can be used to forward each incoming mail to one or more other recipients."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. After editing ~/.forward the user must run newaliases to make the mail server aware of the changes."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. Using ~/.forward, root may configure any email address whereas all other users may configure only their own addresses."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. As ~/.forward is owned by the MTA and not writable by the user, it must be edited using the editaliases command."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. By default, only ~/.forward files of users in the group mailq are processed while all other user's ~/.forward files are ignored."
         ],
         "correct": false
       }
@@ -3167,40 +2443,39 @@
     "qinfo": []
   },
   {
-    "qid": 81,
+    "qid": 68,
     "qtyp": "mc",
     "qtxt": [
-      "Which of the following commands can be used to display the inode number of a given file? (Choose",
-      "two.)"
+      "Which of the following commands display a list of jobs in the print queue? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. inode"
+          "A. cups --list"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. ln"
+          "B. lprm -l"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. ls"
+          "C. lpstat"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. cp"
+          "D. lpr -q"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. stat"
+          "E. lpq"
         ],
         "correct": true
       }
@@ -3209,181 +2484,181 @@
     "qinfo": []
   },
   {
-    "qid": 82,
-    "qtyp": "sc",
+    "qid": 69,
+    "qtyp": "mc",
     "qtxt": [
-      "Which of the following settings for umask ensures that new files have the default permissions -rw-r-----?"
+      "On a system using systemd-journald, which of the following commands add the message Howdy to",
+      "the system log? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. 0017"
+          "A. append Howdy"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. 0640"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. 0038"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. 0227"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. 0027"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "E",
-    "qinfo": []
-  },
-  {
-    "qid": 83,
-    "qtyp": "sc",
-    "qtxt": [
-      "After a power outage, the XFS file system of /dev/sda3 is inconsistent.",
-      "How can the existing file system errors be fixed?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. By using mount -f to force a mount of the file system"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. By running xfsck on the file system"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. By mounting the file system with the option xfs_repair"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. By running xfsadmin repairon the file system"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. By running xfs_repair on the file system"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "E",
-    "qinfo": []
-  },
-  {
-    "qid": 84,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following properties of an existing file changes when a hard link pointing to that file is",
-      "created?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. File size"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. Link count"
+          "B. logger Howdy"
         ],
         "correct": true
       },
       {
         "txt": [
-          "C. Modify timestamp"
+          "C. systemd-cat echo Howdy"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. echo Howdy > /dev/journal"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. Inode number"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. Permissions"
+          "E. journalctl add Howdy"
         ],
         "correct": false
       }
     ],
-    "qcorrect": "B",
+    "qcorrect": "BC",
     "qinfo": []
   },
   {
-    "qid": 85,
+    "qid": 70,
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following options in the chrony configuration file define remote time sources? (Choose",
+      "two.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. source"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. clock"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. remote"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. pool"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. server"
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "DE",
+    "qinfo": []
+  },
+  {
+    "qid": 71,
     "qtyp": "fi",
     "qtxt": [
-      "Following the Filesystem Hierarchy Standard (FHS), where should binaries that have been compiled by",
-      "the system administrator be placed in order to be made available to all users on the system? (Specify the",
-      "full path to the directory.)"
+      "Which command is used to sync the hardware clock to the system clock? (Specify only the command",
+      "without any path or parameters.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "/usr/local/bin"
+          "hwclock"
         ]
       }
     ],
     "qinfo": []
   },
   {
-    "qid": 86,
+    "qid": 72,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands show how the shell handles a specific command?"
+      "Which of the following situations is observed and corrected by an NTP client?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. where"
+          "A. The skew in time between the system clock and the computer's hardware clock."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. type"
+          "B. The physical location and the time zone configuration."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. Changes in the time zone of the current computer's location."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. Adjustment needed to support Daylight Saving Time."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. The skew in time between the system clock and the reference clock."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
+    "qinfo": []
+  },
+  {
+    "qid": 73,
+    "qtyp": "sc",
+    "qtxt": [
+      "If an alias ls exists, which of the following commands updates the alias to point to the command ls -l",
+      "instead of the alias's current target?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. set ls='ls -l'"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. alias ls='ls -l'"
         ],
         "correct": true
       },
       {
         "txt": [
-          "C. stat"
+          "C. alias --force ls='ls -l'"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. case"
+          "D. alias --update ls ls='ls -l'"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. fileinfo"
+          "E. realias ls='ls -l'"
         ],
         "correct": false
       }
@@ -3392,39 +2667,39 @@
     "qinfo": []
   },
   {
-    "qid": 87,
+    "qid": 74,
     "qtyp": "sc",
     "qtxt": [
-      "When in Normal mode in vi, which character can be used to begin a reverse search of the text?"
+      "Which of the following commands puts the output of the command date into the shell variable mydate?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. r"
+          "A. mydate=\"date\""
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. /"
+          "B. mydate=\"exec date\""
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. F"
+          "C. mydate=\"$((date))\""
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. ?"
+          "D. mydate=\"$(date)\""
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. s"
+          "E. mydate=\"${date}\""
         ],
         "correct": false
       }
@@ -3433,39 +2708,121 @@
     "qinfo": []
   },
   {
-    "qid": 88,
+    "qid": 75,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands displays the manual page command from section 1?"
+      "What information is shown by the echo $? command?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. man command(1)"
+          "A. The process ID of the echo command."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. man command@1"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. man 1 command"
+          "B. The exit value of the command executed immediately before echo."
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. man 1.command"
+          "C. The process ID which will be used for the next command."
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. man -s 1 command"
+          "D. The exit value of the echo command."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. The process ID of the current shell."
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "B",
+    "qinfo": []
+  },
+  {
+    "qid": 76,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following files is not read directly by a Bash login shell?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. ~/.bashrc"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. ~/.bash_profile"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. ~/.bash_login"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. ~/.profile"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. /etc/profile"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "A",
+    "qinfo": []
+  },
+  {
+    "qid": 77,
+    "qtyp": "sc",
+    "qtxt": [
+      "What is true about the file .profile in a user's home directory?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. It must be executable."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. It must call the binary of the login shell."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. It must use a valid shell script syntax."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. It must start with a shebang."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. It must be readable for its owner only."
         ],
         "correct": false
       }
@@ -3474,70 +2831,111 @@
     "qinfo": []
   },
   {
-    "qid": 89,
-    "qtyp": "sc",
+    "qid": 78,
+    "qtyp": "mc",
     "qtxt": [
-      "Which of the following commands creates or, in case it already exists, overwrites a file called data with",
-      "the output of ls?"
+      "What is true regarding the statement beginning with ",
+      "  #! ",
+      "that is found in the first line of script? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. ls 3> data"
+          "A. It prevents the scripts from being executed until the ! is removed."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. ls >& data"
+          "B. It triggers the installation of the script's interpreter."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. ls > data"
+          "C. It specifies the path and the arguments of the interpreter used to run the script."
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. ls >> data"
+          "D. It defines the character encoding of the script."
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. ls >>> data"
+          "E. It is a comment that is ignored by the script interpreter."
         ],
-        "correct": false
+        "correct": true
       }
     ],
-    "qcorrect": "C",
+    "qcorrect": "CE",
     "qinfo": []
   },
   {
-    "qid": 90,
+    "qid": 79,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands is used to change options and positional parameters within a",
-      "running Bash shell?"
+      "What output does the command seq 1 5 20 produce?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. history"
+          "A. 1 5 10 15"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. setsh"
+          "B. 1 6 11 16"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "C. 1 2 3 4"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. bashconf"
+          "D. 2 3 4 5"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. 5 10 15 20"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "B",
+    "qinfo": []
+  },
+  {
+    "qid": 80,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following commands lists all defines variables and functions within Bash?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. env"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. export"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. env -a"
         ],
         "correct": false
       },
@@ -3549,7 +2947,7 @@
       },
       {
         "txt": [
-          "E. envsetup"
+          "E. echo $ENV"
         ],
         "correct": false
       }
@@ -3558,39 +2956,206 @@
     "qinfo": []
   },
   {
-    "qid": 91,
-    "qtyp": "mc",
+    "qid": 81,
+    "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands display the IDs of all processes owned by root? (Choose two.)"
+      "What information related to a user account is modified using the chage command?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. pgrep -c root"
+          "A. Default ownership for new files"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. pgrep -u root"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. pgrep -f root"
+          "B. Group membership"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. pgrep -U 0"
+          "C. Set of commands available to the user"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. Password expiry information"
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. pgrep -c 0"
+          "E. Default permissions for new files"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "D",
+    "qinfo": []
+  },
+  {
+    "qid": 82,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which command is used to set restrictions on the size of a core file that is created for a user when a",
+      "program crashes?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. core"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. edquota"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. quota"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. ulimit"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. ktrace"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "D",
+    "qinfo": []
+  },
+  {
+    "qid": 83,
+    "qtyp": "sc",
+    "qtxt": [
+      "How do shadow passwords improve the password security in comparison to standard no-shadow",
+      "password?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. Regular users do not have access to the password hashes of shadow passwords."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. Every shadow password is valid for 45 days and must be changed afterwards."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. The system's host key is used to encrypt all shadow passwords."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. Shadow passwords are always combined with a public key that has to match the user's private key."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. Shadow passwords are stored in plain text and can be checked for weak passwords."
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "A",
+    "qinfo": []
+  },
+  {
+    "qid": 84,
+    "qtyp": "sc",
+    "qtxt": [
+      "After editing the TCP wrapper configuration to grant specific hosts access to a service, when do these",
+      "changes become effective?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. The new configuration becomes effective after restarting the respective service."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. The new configuration becomes effective at the next system reboot."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. The new configuration becomes effective when the last established connection to the service is closed."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. The new configuration becomes effective after restarting the tcpd service."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. The new configuration becomes effective immediately for all new connections."
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
+    "qinfo": []
+  },
+  {
+    "qid": 85,
+    "qtyp": "mc",
+    "qtxt": [
+      "What is true regarding public and private SSH keys? (Choose two.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. For each user account, there is exactly one key pair that can be used to log into that account."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. The private key must never be revealed to anyone."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "C. Several different public keys may be generated for the same private key."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. To maintain the private key's confidentiality, the SSH key pair must be created by its owner."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. To allow remote logins, the user's private key must be copied to the remote server."
         ],
         "correct": false
       }
@@ -3599,81 +3164,306 @@
     "qinfo": []
   },
   {
-    "qid": 92,
-    "qtyp": "mc",
+    "qid": 86,
+    "qtyp": "sc",
     "qtxt": [
-      "Which of the following sequences in the vi editor saves the opened document and exits the editor?",
-      "(Choose two.)"
+      "Which of the following commands finds all files owned by root that have the SetUID bit set?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. Ctrl XX"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. Ctrl :W"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. Esc zz"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. Esc :wq"
+          "A. find / -user root -perm -4000"
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. Esc ZZ"
+          "B. find / -user 0 -mode +s"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. find / -owner root -setuid"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. find / -owner 0 -permbits 0x100000000"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. find / --filter uid=1 --filter pers=u+s"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "A",
+    "qinfo": []
+  },
+  {
+    "qid": 87,
+    "qtyp": "fi",
+    "qtxt": [
+      "What command is used to add OpenSSH private keys to a running ssh-agent instance? (Specify the",
+      "command name only without any path.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "ssh-add"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 88,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which directory holds configuration files for xinetd services? (Specify the full path to the directory.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "/etc/xinetd.d/"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 89,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which mechanism does ssh use to interact with the SSH agent?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. Connecting to port 2222 which is used by the system-wide SSH agent."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. Using the fixed socket .ssh-agent/ipc."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. Creating an alias replacing ssh with calls to ssh-agent."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. Starting ssh-agent as a child process for each ssh invocation."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. Evaluating environment variables such as SSH_AUTH_SOCK."
         ],
         "correct": true
       }
     ],
-    "qcorrect": "DE",
+    "qcorrect": "E",
     "qinfo": []
+  },
+  {
+    "qid": 90,
+    "qtyp": "fi",
+    "qtxt": [
+      "Which parameter of the ssh command specifies the location of the private key used for login attempts?",
+      "(Specify only the option name without any values or parameters.)"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "-i"
+        ]
+      }
+    ],
+    "qinfo": []
+  },
+  {
+    "qid": 91,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following is true about IPv6?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. IPv6 no longer supports broadcast addresses."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. With IPv6, the TCP port numbers of most services have changed."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. IPv4 addresses can be used without any change with IPv6."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. IPv6 no longer supports multicast addresses."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. For IPv6, UDP and TCP have been replaced by the Rapid Transmission Protocol RTP."
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "A",
+    "qinfo": []
+  },
+  {
+    "qid": 92,
+    "qtyp": "sc",
+    "qtxt": [
+      "What is true about the following command?",
+      "  nmcli device wifi connect WIFIoI"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. NetworkManager opens a new public hotspot with the SSID WIFIoI."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. NetworkManager creates an unconfigured new virtual network interface named WIFIoI."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. NetworkManager creates a new wifi connection WIFIoI and activates it."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. NetworkManager returns an error in case the connection WIFIoI does not exist."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. NetworkManager returns an error because WIFIoI is an invalid wifi device."
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "C",
+    "qinfo": [
+      "Explanation:: ",
+      "    centos 7 man page zu nmcli:",
+      "\t\t\twifi connect (B)SSID [password password] [wep-key-type {key | phrase}] [ifname ifname] ",
+      "\t\t\t\t\t\t\t\t\t\t[bssid BSSID] [name name] [private {yes | no}] [hidden {yes | no}]",
+      "           Connect to a Wi-Fi network specified by SSID or BSSID. ",
+      "\t\t\t  The command finds a matching connection ",
+      "\t\t\t\t\t\t\tor ",
+      "\t\t=>=> creates one and then activates it on a device. ",
+      "\t\t\t  This is a command-line counterpart of clicking an SSID in a GUI client. If a connection ",
+      "\t\t\t  for the network already exists, it is possible to bring up (activate) the existing profile ",
+      "\t\t\t  as follows: nmcli con up id name. ",
+      "\t\t=>=> Note that only open, WEP and WPA-PSK networks are supported ",
+      "\t\t\t\t\tif no previous connection exists. ",
+      "\t\t\t\t\tIt is also assumed that IP configuration is obtained via DHCP.",
+      "\tdemnach ist Antwort C hier richtig, sollte es noch nicht bekannt, aber existieren!",
+      "\tIst das Wifi Netzwerk mit Passwort geschützt muß diese dann dazu angegeben werden,",
+      "\twobei dies beim Ausführen des Kommandos als User angefragt wird. Insofern muss man ",
+      "   das Passwort auch nicht dem Kommando mitgeben. Angelegt wird tatsächlich eine ",
+      "   entsprechende Komfigurationsdatei mit zugeordnete Keydatei und das Interface aktiviert!",
+      "    ",
+      "   Vormals alte, als richtig erachtete Antwort:",
+      "    bezogen auf die gegebene Fragestellung und der gegebenen Anworten",
+      "\t ist nur D richtig!",
+      "    wenn WIFIoI nicht existiert => error!",
+      "    wenn WIFIoI existiert, man könnte vermuten ",
+      "    das C richtig wäre, da dieses Kommando auch eine entsprechende ",
+      "    Konfigurationsdatei anlegt! - AP muss also existieren und es wird ",
+      "    auch die Aktivierung der Verbindung versucht. Da aber z.B. kein Passwort",
+      "    angegeben ist, ist es sehr fraglich, wie eigentlich der AP",
+      "\t konfiguriert ist. In der Regel ist die Aktivierung daher nicht möglich,",
+      "    daher C = falsch.",
+      "   Ergänzung, warum aber C richtig ist: die Fehlermeldung gibs es nur beim Ausführen",
+      "\t\t\t\t\tdes Kommandos unter root. Als User ausgeführt wird das Passwort",
+      "\t\t\t\t\tangefragt und bei richtigem Passwort eine Konfigurationsdatei und ",
+      "\t\t\t\t\tzugehörige Passwort (key) Datei angelegt, sowie das Interface aktiviert!",
+      "\t ",
+      ""
+    ]
   },
   {
     "qid": 93,
     "qtyp": "sc",
     "qtxt": [
-      "What is the effect of the -v option for the grep command?"
+      "Which of the commands below might have produced the following output?",
+      "  ;; global options: +cmd",
+      "  ;; Got answer:",
+      "  ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 14368",
+      "  ;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1",
+      "  ",
+      "  ;; OPT PSEUDOSECTION:",
+      "  ; EDNS: version: 0, flags:; udp: 4096",
+      "  ;; QuESTION SECTION:",
+      "  ;www.example.org.               IN      NS",
+      "  ",
+      "  ;; AUTHORITY SECTION:",
+      "  example.org.            3600    IN      SOA     ns.icann.org. noc.dns.icann.org. 2019121418 7200 3600 1209600 3600",
+      "  ",
+      "  ;; Query time: 96 msec",
+      "  ;; SERVER: 172.21.0.9#53(172.21.0.9)",
+      "  ;; WHEN: Di Jun 23 13:57:34 CEST 2020",
+      "  ;; MSG SIZE  rcvd: 97"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. It enables color to highlight matching parts."
+          "A. dig -t mx www.example.org"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. It shows the command’s version information."
+          "B. dig www.example.org"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. It only outputs non-matching lines."
+          "C. dig -t ns www.example.org"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. It changes the output order showing the last matching line first."
+          "D. dig -t a www.example.org"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. It outputs all lines and prefixes matching lines with a+."
+          "E. dig -t soa www.example.org"
         ],
         "correct": false
       }
@@ -3683,638 +3473,558 @@
   },
   {
     "qid": 94,
-    "qtyp": "mc",
+    "qtyp": "fi",
     "qtxt": [
-      "Which of the following tools can show the complete path of an executable file that the current shell",
-      "would execute when starting a command without specifying its complete path? (Choose two.)"
+      "Which parameter is missing in the command",
+      "  ip link set ____ dev eth0",
+      "to activate the previously inactive network interface eth0? (Specify the parameter only without any",
+      "command, path or additional options.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. find"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. pwd"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. which"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. locate"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. type"
-        ],
-        "correct": true
+          "up"
+        ]
       }
     ],
-    "qcorrect": "CE",
     "qinfo": []
   },
   {
     "qid": 95,
-    "qtyp": "sc",
+    "qtyp": "mc",
     "qtxt": [
-      "Which of the following signals is sent to a process when the key combination Ctrl+Z is pressed on the",
-      "keyboard?"
+      "Which of the following states can NetworkManager show regarding the system's network connectivity?",
+      "(Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. SIGTERM"
+          "A. up"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. SIGCONT"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. SIGSTOP"
+          "B. portal"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. SIGKILL"
+          "C. full"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. login-required"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. SIGINT"
+          "E. firewalled"
         ],
         "correct": false
       }
     ],
-    "qcorrect": "C",
+    "qcorrect": "BC",
     "qinfo": []
   },
   {
     "qid": 96,
-    "qtyp": "sc",
+    "qtyp": "mc",
     "qtxt": [
-      "What is the output when the regular expression 's/[ABC][abc]/xx/' is applied to the following string?",
-      " ABCabc"
+      "Which of the following are valid host addresses for the subnet 203.0.113.64/28? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. ABxxbc"
+          "A. 203.0.113.64"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. 203.0.113.78"
         ],
         "correct": true
       },
       {
         "txt": [
-          "B. xxCxxc"
+          "C. 203.0.113.65"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. 203.0.113.80"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. xxxxxx"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. ABCabc"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. Axxaxx"
+          "E. 203.0.113.81"
         ],
         "correct": false
       }
     ],
-    "qcorrect": "A",
+    "qcorrect": "BC",
     "qinfo": []
   },
   {
     "qid": 97,
     "qtyp": "mc",
     "qtxt": [
-      "Which of the following commands print the current working directory when using a Bash shell?",
-      "(Choose two.)"
+      "Which of the following keywords can be used in the file /etc/resolv.conf? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. echo \"${PWD}\""
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. echo \"${WD}\""
+          "A. substitute"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. printwd"
+          "B. lookup"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. pwd"
+          "C. search"
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. echo \"${pwd}\""
+          "D. nameserver"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. method"
         ],
         "correct": false
       }
     ],
-    "qcorrect": "AD",
+    "qcorrect": "CD",
     "qinfo": []
   },
   {
     "qid": 98,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands outputs test to the shell?",
-      "++++++++++++++++++++++++++++++++++++++++++++++++++"
+      "How does the ping command work by default?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A.  cat <!EOT ",
-          "  test",
-          "  EOT"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B.  cat <|EOT "
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C.  cat !<EOT"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D.  cat &<EOT"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E.  cat <<EOT"
+          "A. Is sends an ICMP Echo Request to a remote host and waits to receive an ICMP Echo Response in return."
         ],
         "correct": true
+      },
+      {
+        "txt": [
+          "B. It sends an ARP request to a remote host and waits to receive an ARP response in return."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. It sends a TCP SYN packet to a remote host and waits to receive an TCP ACK response in return."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. Is sends a broadcast packet to all hosts on the net and waits to receive, among others, a response from the target system."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. It sends a UDP packet to port 0 of the remote host and waits to receive a UDP error response in return."
+        ],
+        "correct": false
       }
     ],
-    "qcorrect": "E",
+    "qcorrect": "A",
     "qinfo": []
   },
   {
     "qid": 99,
-    "qtyp": "sc",
+    "qtyp": "mc",
     "qtxt": [
-      "What is the default nice level when a process is started using the nice command?"
+      "Which of the following commands displays the number of bytes transmitted and received via the eth0",
+      "network interface? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. -10"
+          "A. route -v via eth0"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. 0"
+          "B. ip stats show dev eth0"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. 10"
+          "C. netstat -s -i eth0"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. ifconfig eth0"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. 15"
+          "E. ip -s link show eth0"
         ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. 20"
-        ],
-        "correct": false
+        "correct": true
       }
     ],
-    "qcorrect": "C",
+    "qcorrect": "DE",
     "qinfo": []
   },
   {
     "qid": 100,
     "qtyp": "sc",
     "qtxt": [
-      "A user accidentally created the subdirectory \\dir in his home directory.",
-      "Which of the following commands will remove that directory?"
+      "Given the following routing table:",
+      " Kernel IP routing table",
+      " Destination   Gateway       Genmask       Flags Metric Ref Use Iface",
+      " 0.0.0.0       192.168.178.1 0.0.0.0       UG    0      0   0   wlan0",
+      " 192.168.1.0   0.0.0.0       255.255.255.0 U     0      0   0   eth0",
+      " 192.168.2.0   192.168.1.1   255.255.255.0 U     0      0   0   eth0",
+      " 192.168.178.0 0.0.0.0       255.255.255.0 U     9      0   0   wlan0",
+      "How would an outgoing packet to the destination 192.168.2.150 be handled?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. rmdir ~/\\\\dir"
+          "A. It would be passed to the default router 192.168.178.1 on wlan0."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. It would be directly transmitted on the device eth0."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. It would be passed to the default router 255.255.255.0 on eth0."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. It would be passed to the router 192.168.1.1 on eth0."
         ],
         "correct": true
       },
       {
         "txt": [
-          "B. rmdir \"~/\\dir\""
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. rmdir ~/’dir’"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. rmdir ~/\\dir"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. rmdir '~/\\dir’"
+          "E. It would be directly transmitted on the device wlan0."
         ],
         "correct": false
       }
     ],
-    "qcorrect": "A",
+    "qcorrect": "D",
     "qinfo": []
   },
   {
     "qid": 101,
-    "qtyp": "sc",
+    "qtyp": "mc",
     "qtxt": [
-      "Which of the following commands can perform searches on file contents using regular expressions?"
+      "Which of the following commands will delete the default gateway from the system's IP routing table?",
+      "(Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. find"
+          "A. ifconfig unset default"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. locate"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. grep"
+          "B. route del default"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. reggrep"
+          "C. ip route del default"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. netstat -r default"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. pgrep"
+          "E. sysctl ipv4.default_gw=0"
         ],
         "correct": false
       }
     ],
-    "qcorrect": "C",
+    "qcorrect": "BC",
     "qinfo": []
   },
   {
     "qid": 102,
-    "qtyp": "sc",
-    "qtxt": [],
+    "qtyp": "fi",
+    "qtxt": [
+      "What command enables a network interface according to distribution-specific configuration, such as",
+      "  /etc/network/interfaces",
+      "or ",
+      "  /etc/sysconfig/network-scripts/ifcfg-eth0? ",
+      "(Specify only the command without any path or parameters.)"
+    ],
     "qanswers": [
       {
         "txt": [
-          "In a nested directory structure, which find command line option would be used to restrict the",
-          "command to searching down a particular number of subdirectories?"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "A. -maxdepth"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. -dirmax"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. -maxlevels"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. -s"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. -n"
-        ],
-        "correct": false
+          "ifup"
+        ]
       }
     ],
-    "qcorrect": "A",
     "qinfo": []
   },
   {
     "qid": 103,
-    "qtyp": "sc",
+    "qtyp": "mc",
     "qtxt": [
-      "Which of the following commands determines a file’s format by using a definition database file which",
-      "contains information about all common file types?"
+      "What is true about NetworkManager on a Linux system that uses its distribution's mechanisms to",
+      "configure network interfaces? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. type"
+          "A. NetworkManager reconfigures all network interfaces to use DHCP unless they are specifically managed by NetworkManager."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. file"
+          "B. NetworkManager must be explicitly enabled for each interface it should manage."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. NetworkManager by default does not change interfaces which are already configured."
         ],
         "correct": true
       },
       {
         "txt": [
-          "C. magic"
+          "D. NetworkManager disables all interfaces which were not configured by NetworkManager."
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. pmagic"
+          "E. NetworkManager can be configured to use the distribution's network interface configuration."
         ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. hash"
-        ],
-        "correct": false
+        "correct": true
       }
     ],
-    "qcorrect": "B",
-    "qinfo": []
+    "qcorrect": "CE",
+    "qinfo": [
+      "Explanation::",
+      "\t\told answers BC",
+      "\t  new answers: CE",
+      ""
+    ]
   },
   {
     "qid": 104,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands generates a list of user names from /etc/passwd along with their",
-      "login shell?"
+      "Which standardized TCP port is used by HTTPS services?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. column -s : 1,7 /etc/passwd"
+          "A. 25"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. chop -c 1,7 /etc/passwd"
+          "B. 80"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. colrm 1,7 /etc/passwd"
+          "C. 8080"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. sort -t: -k1,7 /etc/passwd"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. cut -d: -f1,7 /etc/passwd"
+          "D. 443"
         ],
         "correct": true
+      },
+      {
+        "txt": [
+          "E. 636"
+        ],
+        "correct": false
       }
     ],
-    "qcorrect": "E",
+    "qcorrect": "D",
     "qinfo": []
   },
   {
     "qid": 105,
-    "qtyp": "sc",
-    "qtxt": [],
+    "qtyp": "mc",
+    "qtxt": [
+      "Which of the following environment variables can be defined in locale.conf? (Choose two.)"
+    ],
     "qanswers": [
       {
         "txt": [
-          "If the gzip compressed tar archive texts.tgz contains the files a.txt and b.txt, which files will be present",
-          "in the current directory after running gunzip texts.tgz?"
+          "A. LC_ALL"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "B. LC_USERNAME"
         ],
         "correct": false
       },
       {
         "txt": [
-          "A. Only a.txt, b.txt, and texts.tgz"
+          "C. LC_UTF8"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. Only texts.tar and texts.tgz"
+          "D. LC_GEOGRAPHY"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. Only a.txt.gz and b.txt.gz"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. Only a.txt and b.txt"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. Only texts.tar"
+          "E. LC_TIME"
         ],
         "correct": true
       }
     ],
-    "qcorrect": "E",
+    "qcorrect": "AE",
     "qinfo": []
   },
   {
     "qid": 106,
     "qtyp": "sc",
-    "qtxt": [],
+    "qtxt": [
+      "Which of the following commands sets the system's time zone to the Canadian Eastern Time?"
+    ],
     "qanswers": [
       {
         "txt": [
-          "In the vi editor, how can commands such as moving the cursor or copying lines into the buffer be",
-          "issued multiple times or applied to multiple rows?"
+          "A. localegen -t -f /usr/share/zoneinfo/Canada/Eastern > /etc/locate.tz"
         ],
         "correct": false
       },
       {
         "txt": [
-          "A. By using the command :repeat followed by the number and the command"
+          "B. tzconf /etc/localtime"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. By specifying the number right in front of a command such as 4l or 2yj."
+          "C. sysctl -w clock.tz='Canada/Eastern'"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. modprobe tz_ca_est"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. ln -sf /usr/share/zoneinfo/Canada/Eastern /etc/localtime"
         ],
         "correct": true
-      },
-      {
-        "txt": [
-          "C. By selecting all affected lines using the shit and cursor keys before applying the command."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. By issuing a command such as :set repetition=4 with repeats every subsequent command 4 times."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. By specifying the number after a command such as l4 or yj2 followed by escape."
-        ],
-        "correct": false
       }
     ],
-    "qcorrect": "B",
+    "qcorrect": "E",
     "qinfo": []
   },
   {
     "qid": 107,
-    "qtyp": "sc",
+    "qtyp": "fi",
     "qtxt": [
-      "Which of the following statements is correct for a command ending with an & character?"
+      "What option to useradd creates a new user's home directory and provisions it with a set of standard files?",
+      "(Specify only the option name without any values or parameters.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. The command’s output is redirected to /dev/null."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. The command is run in background of the current shell."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. The command’s output is executed by the shell."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. The command is run as a direct child of the init process."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. The command’s input is read from /dev/null."
-        ],
-        "correct": false
+          "-m"
+        ]
       }
     ],
-    "qcorrect": "B",
     "qinfo": []
   },
   {
     "qid": 108,
     "qtyp": "sc",
     "qtxt": [
-      "Which of the following commands reads a file and creates separate chunks of a given size from the",
-      "file’s contents?"
+      "How can a specific user be prevented from scheduling tasks with at?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. ar"
+          "A. By adding the specific user to the /etc/at.allow file."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. cat"
+          "B. By adding the specific user to the [deny] section in the /etc/atd.conf file."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. break"
+          "C. By adding the specific user to the nojobs group."
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. split"
+          "D. By adding the specific user to the /etc/at.deny file."
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. parted"
+          "E. By executing the atd --deny [user] command."
         ],
         "correct": false
       }
@@ -4326,113 +4036,118 @@
     "qid": 109,
     "qtyp": "sc",
     "qtxt": [
-      "What is the purpose of the xargs command?"
+      "Which file contains the data of the last change of a user's password?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. It passes arguments to an X server."
+          "A. /etc/gshadow"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. It repeats the execution of a command using different parameters for each invocation."
+          "B. /etc/passwd"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. It reads standard input and builds up commands to execute."
+          "C. /etc/pwdlog"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. /var/log/shadow"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. /etc/shadow"
         ],
         "correct": true
-      },
-      {
-        "txt": [
-          "D. It asks a question, graphically, and returns the answer to the shell."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. It allows specifying long options (like --help) for commands that normally only accept short options (like -h)"
-        ],
-        "correct": false
       }
     ],
-    "qcorrect": "C",
+    "qcorrect": "E",
     "qinfo": []
   },
   {
     "qid": 110,
-    "qtyp": "fi",
+    "qtyp": "mc",
     "qtxt": [
-      "Which command displays a list of all background tasks running in the current shell? (Specify ONLY the",
-      "command without any path or parameters.)"
+      "Which of the following fields can be found in the /etc/group file? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "jobs"
-        ]
-      }
-    ],
-    "qinfo": []
-  },
-  {
-    "qid": 111,
-    "qtyp": "fi",
-    "qtxt": [
-      "Which command is used to change the priority of an already running process? (Specify ONLY the",
-      "command without any path or parameters.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "renice"
-        ]
-      }
-    ],
-    "qinfo": []
-  },
-  {
-    "qid": 112,
-    "qtyp": "sc",
-    "qtxt": [],
-    "qanswers": [
-      {
-        "txt": [
-          "In Bash, inserting 1>&2 after a command redirects…"
+          "A. The home directory of the group."
         ],
         "correct": false
       },
       {
         "txt": [
-          "A. …standard error to standard input."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. …standard output to standard error."
+          "B. The list of users that belong to the group."
         ],
         "correct": true
       },
       {
         "txt": [
-          "C. …standard input to standard error."
+          "C. The name of the group."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. The default group ACL."
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. …standard error to standard output."
+          "E. The description of the group."
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "BC",
+    "qinfo": []
+  },
+  {
+    "qid": 111,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following sections exists in a systemd timer unit?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. [Events]"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. …standard output to standard input."
+          "B. [Timer]"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "C. [cron]"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. [Schedule]"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. [Trigger]"
         ],
         "correct": false
       }
@@ -4441,83 +4156,181 @@
     "qinfo": []
   },
   {
-    "qid": 113,
+    "qid": 112,
     "qtyp": "sc",
     "qtxt": [
-      "When booting from the hard disk, a computer successfully loads the Linux kernel and initramfs but",
-      "hangs during the subsequent startup tasks. The system is booted using a Linux based rescue CD to",
-      "investigate the problem.",
-      "Which of the following methods helps to identify the root cause of the problem?"
+      "Which of the following getent invocations lists all existing users?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. Using the dmesg command from the rescue CD’s shell to view the original system’s boot logs."
+          "A. getent homes"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. Investigating the file /proc/kmsg on the computer’s hard disk for possible errors."
+          "B. getent uids"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. Investigating the files in /var/log on the computer’s hard disk for possible errors."
+          "C. getent passwd"
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. Using chroot to switch to the file system on the hard disk and use dmesg to view the logs."
+          "D. getent users"
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. Rebooting again from the hard drive since the system successfully booted from the rescue CD."
+          "E. getent logins"
         ],
         "correct": false
       }
     ],
     "qcorrect": "C",
+    "qinfo": []
+  },
+  {
+    "qid": 113,
+    "qtyp": "sc",
+    "qtxt": [
+      "Given the following user's crontab entry:",
+      " 15 14 * * 1-5 /usr/local/bin/example.sh",
+      "When will the script /usr/local/bin/example.sh be executed?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. At 14:15 local time, January till May."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. At 15:14 local time, 1st to 5th day of month."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. At 14:15 local time, February till June."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. At 14:15 local time, 1st to 5th day of month."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. At 14:15 local time, Monday to Friday"
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
     "qinfo": []
   },
   {
     "qid": 114,
     "qtyp": "sc",
     "qtxt": [
-      "Where is the bootloader stored on the hard disk of a UEFI system?"
+      "If neither cron.allow nor cron.deny exist in /etc/, which of the following is true?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. In the EFI Boot Record (EBR)."
+          "A. Without additional configuration, all users may create user specific crontabs."
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. In the Master Boot Record (MBR)."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. On the EFI System Partition (ESP)."
+          "B. Without additional configuration, only root may create user specific crontabs."
         ],
         "correct": true
       },
       {
         "txt": [
-          "D. On the partition labeled boot."
+          "C. The cron daemon will refuse to start and report missing files in the system's logfile."
         ],
         "correct": false
       },
       {
         "txt": [
-          "E. On the partition number 127."
+          "D. When a user creates a user specific crontab the system administrator must approve it explicitly."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. The default settings of /etc/crond.conf define whether or not user specific crontabs are generally allowed or not."
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "B",
+    "qinfo": [
+      "Explanation::",
+      "  Zunächst vermutete richtige Antwort:",
+      "  A - aber nur für debian/ubuntu",
+      "    debian/ubuntu etc : A - ist erlaubt",
+      "    bei RHEL/SEL/Fedora/CentOS wäre A falsch, weil da User dann cron nicht nutzen können!",
+      "   B ist falsch: \"root legt keine spezifischen crontabs für einen User an, wenn man ",
+      "\t\t\t\t\t\tdamit jeweils entsprechende User-Dateien meint. ",
+      "  Neue richtige Antwort:",
+      "  B ist richtig:  ",
+      "  \t\tABER:",
+      "\t\t- außer es wird die globale /etc/crontab benutzt, wo root user spezifische ",
+      "\t\t  crontab Einträge vornehmen kann, z.B für System spezifische Services, die ",
+      "\t\t  nicht unter root laufen sollen! DANN WÄRE B RICHTIG :) und dies ",
+      "\t\t  gilt für alle Linux System gleichermaßen, also keine Unterschied ob ",
+      "\t\t  Debian/Ubuntu etc. oder RHEL/SLES/Suse/Fedora/RockuLinux/Centos etc.",
+      ""
+    ]
+  },
+  {
+    "qid": 115,
+    "qtyp": "sc",
+    "qtxt": [
+      "What is the purpose of the iconv command?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. It converts bitmap images from one format to another such as PNG to JPEG."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. It verifies that the root directory tree compiles to all conventions from the Filesystem Hierarchy Standard (FHS)."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. It converts files from one character set to an other."
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "D. It changes the mode of an inode in the ext4 filesystem."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. It displays additional meta information from icon files ending in .ico."
         ],
         "correct": false
       }
@@ -4526,39 +4339,81 @@
     "qinfo": []
   },
   {
-    "qid": 115,
+    "qid": 116,
     "qtyp": "sc",
     "qtxt": [
-      "What is the correct way to set the default systemd boot target to multi-user?"
+      "Which character in the password field of /etc/passwd is used to indicate that the encrypted password",
+      "is stored in /etc/shadow?"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. systemctl isolate multi-user.target"
+          "A. *"
         ],
         "correct": false
       },
       {
         "txt": [
-          "B. systemctl set-runlevel multi-user.target"
+          "B. !"
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. systemctl set-boot multi-user.target"
+          "C. s"
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. systemctl set-default multi-user.target"
+          "D. #"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "E. x"
+        ],
+        "correct": true
+      }
+    ],
+    "qcorrect": "E",
+    "qinfo": []
+  },
+  {
+    "qid": 117,
+    "qtyp": "sc",
+    "qtxt": [
+      "What does the term Braille Display refer to?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. A standardized high contract graphical theme for desktop applications?"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. A Linux desktop environment similar to KDE and GNOME."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. A legacy display technology superseded by LCD."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. A physical representation of characters using small dots."
         ],
         "correct": true
       },
       {
         "txt": [
-          "E. systemctl boot -p multi-user.target"
+          "E. A standard file format for data exchange, similar to XML."
         ],
         "correct": false
       }
@@ -4567,199 +4422,101 @@
     "qinfo": []
   },
   {
-    "qid": 116,
-    "qtyp": "mc",
-    "qtxt": [
-      "Which of the following statements are correct about the initial RAM disk involved in the boot process",
-      "of Linux? (Choose two.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. An initramfs is a compressed file system archive, which can be unpacked to examine its contents."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "B. An initramfs file contains the MBR, the bootloader and the Linux kernel."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "C. After a successful boot, the initramfs contents are available in /run/initramfs/."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. The kernel uses the initramfs temporarily before accessing the real root file system."
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "E. An initramfs does not depend on a specific kernel version and is not changed after the initial installation."
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "AD",
-    "qinfo": []
-  },
-  {
-    "qid": 117,
-    "qtyp": "sc",
-    "qtxt": [
-      "Which of the following commands loads a kernel module along with any required dependency",
-      "modules?"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. depmod"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. modprobe"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. module_install"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "D. insmod"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. loadmod"
-        ],
-        "correct": false
-      }
-    ],
-    "qcorrect": "B",
-    "qinfo": []
-  },
-  {
     "qid": 118,
-    "qtyp": "mc",
-    "qtxt": [
-      "What information can the lspci command display about the system hardware? (Choose three.)"
-    ],
-    "qanswers": [
-      {
-        "txt": [
-          "A. System battery type"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "B. Device IRQ settings"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "C. PCI bus speed"
-        ],
-        "correct": true
-      },
-      {
-        "txt": [
-          "D. Ethernet MAC address"
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. Device vendor identification"
-        ],
-        "correct": true
-      }
-    ],
-    "qcorrect": "BCE",
-    "qinfo": []
-  },
-  {
-    "qid": 119,
     "qtyp": "fi",
     "qtxt": [
-      "Which System V init configuration file is commonly used to set the default run level? (Specify the full",
-      "name of the file, including path.)"
+      "Which environment variable is used by an X11 client to determine the X Server to connect to? (Specify",
+      "only the variable name without any preceding commands or values.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "/etc/inittab"
+          "DISPLAY"
         ]
       }
     ],
     "qinfo": []
   },
   {
-    "qid": 120,
+    "qid": 119,
     "qtyp": "mc",
     "qtxt": [
-      "Given the following two symbolic links in a System V init configuration:",
-      " /etc/rc1.d/K01apache2",
-      " /etc/rc2.d/S02apache2",
-      "When are the scripts executed that are referenced by these links? (Choose two.)"
+      "Which of the following tasks are handled by a display manager like XDM or KDM? (Choose two.)"
     ],
     "qanswers": [
       {
         "txt": [
-          "A. S02apache2 is run when runlevel 2 is entered."
+          "A. Configure additional devices like new monitors or projectors when they are attached."
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. Start and prepare the desktop environment for the user."
         ],
         "correct": true
       },
       {
         "txt": [
-          "B. S02apache2 is run when runlevel 2 is left."
+          "C. Create an X11 configuration file for the current graphic devices and monitors."
         ],
         "correct": false
       },
       {
         "txt": [
-          "C. K01apache2 is never run because K indicates a deactivated service."
+          "D. Lock the screen when the user was inactive for a configurable amount of time."
         ],
         "correct": false
       },
       {
         "txt": [
-          "D. Both S02apache2 and K01apache2 are run during a system shutdown."
-        ],
-        "correct": false
-      },
-      {
-        "txt": [
-          "E. K01apache2 is run when runlevel 1 is entered."
+          "E. Handle the login of a user."
         ],
         "correct": true
       }
     ],
-    "qcorrect": "AE",
-    "qinfo": [
-      "Explanation: correct answer: AE",
-      "Entering a runlevel, first all Kxx... scripts will be called ",
-      "with first parameter \"stop\" to stop the service.",
-      "Then all Sxx... script will be called",
-      "with first parameter \"start\" to start the service",
-      " /etc/rc1.d/K01apache2",
-      "    entering runlevel 1 : will execute script with parameter \"stop\" to stop service ",
-      " /etc/rc2.d/S02apache2",
-      "    entering runlevel 2 : will execute script with parameter \"start\" to start service ",
-      ""
-    ]
+    "qcorrect": "BE",
+    "qinfo": []
+  },
+  {
+    "qid": 120,
+    "qtyp": "sc",
+    "qtxt": [
+      "Which of the following protocols is designed to access the video card output of a virtual machine?"
+    ],
+    "qanswers": [
+      {
+        "txt": [
+          "A. KDE"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "B. X11"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "C. Xfce"
+        ],
+        "correct": false
+      },
+      {
+        "txt": [
+          "D. SPICE"
+        ],
+        "correct": true
+      },
+      {
+        "txt": [
+          "E. XDMCP"
+        ],
+        "correct": false
+      }
+    ],
+    "qcorrect": "D",
+    "qinfo": []
   }
 ]

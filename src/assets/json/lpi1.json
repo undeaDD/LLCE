@@ -354,7 +354,10 @@
   {
     "qid": 10,
     "qtyp": "mc",
-    "qtxt": [],
+    "qtxt": [
+      "In order to display all currently mounted filesystems, which of the following commands could be used?",
+      "(Choose two.)"
+    ],
     "qanswers": [
       {
         "txt": [
@@ -492,14 +495,10 @@
   {
     "qid": 14,
     "qtyp": "sc",
-    "qtxt": [],
+    "qtxt": [
+      "In compliance with the FHS, in which of the directories are man pages found?"
+    ],
     "qanswers": [
-      {
-        "txt": [
-          "In compliance with the FHS, in which of the directories are man pages found?"
-        ],
-        "correct": false
-      },
       {
         "txt": [
           "A. /opt/man/"
@@ -4020,15 +4019,11 @@
   {
     "qid": 102,
     "qtyp": "sc",
-    "qtxt": [],
+    "qtxt": [
+      "In a nested directory structure, which find command line option would be used to restrict the",
+      "command to searching down a particular number of subdirectories?"
+    ],
     "qanswers": [
-      {
-        "txt": [
-          "In a nested directory structure, which find command line option would be used to restrict the",
-          "command to searching down a particular number of subdirectories?"
-        ],
-        "correct": false
-      },
       {
         "txt": [
           "A. -maxdepth"
@@ -4150,15 +4145,11 @@
   {
     "qid": 105,
     "qtyp": "sc",
-    "qtxt": [],
+    "qtxt": [
+      "If the gzip compressed tar archive texts.tgz contains the files a.txt and b.txt, which files will be present",
+      "in the current directory after running gunzip texts.tgz?"
+    ],
     "qanswers": [
-      {
-        "txt": [
-          "If the gzip compressed tar archive texts.tgz contains the files a.txt and b.txt, which files will be present",
-          "in the current directory after running gunzip texts.tgz?"
-        ],
-        "correct": false
-      },
       {
         "txt": [
           "A. Only a.txt, b.txt, and texts.tgz"
@@ -4196,15 +4187,11 @@
   {
     "qid": 106,
     "qtyp": "sc",
-    "qtxt": [],
+    "qtxt": [
+      "In the vi editor, how can commands such as moving the cursor or copying lines into the buffer be",
+      "issued multiple times or applied to multiple rows?"
+    ],
     "qanswers": [
-      {
-        "txt": [
-          "In the vi editor, how can commands such as moving the cursor or copying lines into the buffer be",
-          "issued multiple times or applied to multiple rows?"
-        ],
-        "correct": false
-      },
       {
         "txt": [
           "A. By using the command :repeat followed by the number and the command"
@@ -4398,14 +4385,10 @@
   {
     "qid": 112,
     "qtyp": "sc",
-    "qtxt": [],
+    "qtxt": [
+      "In Bash, inserting 1>&2 after a command redirects…"
+    ],
     "qanswers": [
-      {
-        "txt": [
-          "In Bash, inserting 1>&2 after a command redirects…"
-        ],
-        "correct": false
-      },
       {
         "txt": [
           "A. …standard error to standard input."
